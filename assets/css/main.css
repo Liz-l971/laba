@@ -8,7 +8,7 @@
 	--white: #fff;
 }
 
-img {
+.lazy {
     background: #F1F1FA;
 }
 *{
@@ -38,6 +38,10 @@ img {
     /* margin: 8.7rem 0; */
     overflow-x: hidden;
 
+}
+
+.block.block-researches{
+    position: unset;
 }
 
 .vector-decor{
@@ -171,7 +175,6 @@ letter-spacing: -0.01em;
 }
 
 .block.block--border-radius.block--minus-margin{
-    position: relative;
     margin: -100px 0 0 0;
 }
 

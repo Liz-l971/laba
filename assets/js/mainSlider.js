@@ -1,8 +1,5 @@
-// console.log(document.querySelector(".slider__cards__content").offsetLeft)
-
 const sliderContainer =document.querySelector(".slider__cards__content");
 const sliderCard = document.querySelector(".slider__card ")
-// const sliderContainerLeft = Number(document.querySelector(".slider__cards__content").offsetLeft);
 
 function nextSlide(){
 

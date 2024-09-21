@@ -13,7 +13,7 @@
     <script src="./assets/js/slider.js" defer></script>
     <script src="./assets/js/mainSlider.js" defer></script>
     <script src="./assets/js/modal.js" defer></script>
-    <script src="./assets/js/mainSlider.js" defer></script>
+    <script src="./assets/js/loadImage.js" defer></script>
     <title>Document</title>
 </head>
 
@@ -123,7 +123,6 @@
     </header>
     <video autoplay  muted loop name="media" class="banner-background">
         <source src="./assets/img/banner2.mp4" type="video/mp4">
-        <img src="./assets/img/banner.png" alt="">
     </video>
     <section class="banner">
 
@@ -149,7 +148,7 @@
         </div>
     </section>
 
-    <section class="block block--border-radius block--first block--minus-margin">
+    <section class="block block-researches block--border-radius block--first block--minus-margin">
         <div class="container">
             <div class="title__wrap center">
                 <p class="title center">Наши исследования</p>
@@ -158,7 +157,7 @@
             <div class="researches__wrap">
                 <div class="researches__content">
                     <div class="researches__content-card">
-                        <img class="lazy" data-src="./assets/img/researches_1.png" alt="" class="researches__content-image">
+                        <img data-src="./assets/img/researches_1.png" alt="" class="lazy researches__content-image">
                         <a class="researches__card-button">
                             <p>
                                 Грунты
@@ -172,17 +171,17 @@
                 </div>
                     <div class="researches__content">
                         <div class="researches__content-card small-height-card">
-                            <img class="lazy" data-src="./assets/img/researches_2.png" alt="" class="researches__content-image-small-height">
+                            <img  data-src="./assets/img/researches_2.png" alt="" class="lazy researches__content-image-small-height">
                             <a class="researches__card-button small">
                                 <p>
                                     Вода
                                 </p>
-                                <img class="lazy" data-src="./assets/img/arrowDark.svg" alt="" class="arrow-dark-image">
+                                <img src="./assets/img/arrowDark.svg" alt="" class="lazy arrow-dark-image">
                             </a>
                         </div>
     
                         <div class="researches__content-card small-height-card small-card " >
-                            <img class="lazy" data-src="./assets/img/researches_3.png" alt=""class="researches__content-image-small-height" >
+                            <img  data-src="./assets/img/researches_3.png" class="lazy researches__content-image-small-height" >
                             <a class="researches__card-button small small-txt">
                                 <p>
                                     Грунты
@@ -192,7 +191,7 @@
                         </div>
     
                         <div class="researches__content-card small-height-card small-card" >
-                            <img src="./assets/img/researches_4.png" alt="" class="researches__content-image-small-height">
+                            <img data-src="./assets/img/researches_4.png" alt="" class="lazy researches__content-image-small-height">
                             <a class="researches__card-button small small-txt">
                                 <p>
                                     Воздух
@@ -217,12 +216,12 @@
                                 </p>
                                 <img src="./assets/img/arrowDark.svg" alt="" class="arrow-dark-image">
                             </a>
-                            <img src="./assets/img/researches_5.png" alt="" class="researches__content-image">
+                            <img data-src="./assets/img/researches_5.png" alt="" class="lazy researches__content-image">
 
                         </div>
                         <div class="background__small">
                             <div class="researches__content-card small">
-                                <img src="./assets/img/researches_9.png" alt="" class="researches__content-image-unical">
+                                <img data-src="./assets/img/researches_9.png" alt="" class="lazy researches__content-image-unical">
                                 <a class="researches__card-button small">
                                     <p>
                                         Помещения
@@ -239,7 +238,7 @@
             </div>
                 <div class="researches__content">
                     <div class="researches__content-card small-height-card">
-                        <img src="./assets/img/researches_2.png" alt="" class="researches__content-image-small-height">
+                        <img data-src="./assets/img/researches_2.png" alt="" class="lazy researches__content-image-small-height">
                         <a class="researches__card-button small">
                             <p>
                                 Вода
@@ -249,7 +248,7 @@
                     </div>
 
                     <div class="researches__content-card small-height-card small-card " >
-                        <img src="./assets/img/researches_3.png" alt="" class="researches__content-image-small-height">
+                        <img data-src="./assets/img/researches_3.png" alt="" class="lazy researches__content-image-small-height">
                         <a class="researches__card-button small small-txt">
                             <p>
                                 Грунты
@@ -260,7 +259,7 @@
                     </div>
 
                     <div class="researches__content-card small-height-card small-card" >
-                        <img src="./assets/img/researches_4.png" alt="" class="researches__content-image-small-height">
+                        <img data-src="./assets/img/researches_4.png" alt="" class="lazy researches__content-image-small-height">
                         <a class="researches__card-button small small-txt">
                             <p>
                                 Воздух
