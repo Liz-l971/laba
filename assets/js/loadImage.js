@@ -19,3 +19,11 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     }
   }) 
+
+
+  const video = document.getElementById('backround-video');
+    
+  video.addEventListener('canplaythrough', function() {
+      console.log('Видео полностью загружено и готово к воспроизведению без прерываний.');
+      document.querySelector(".banner").style.background="rgba(0, 0, 0, 0.75)"
+  });
