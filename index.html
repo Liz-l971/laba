@@ -12,22 +12,73 @@
     <link rel="stylesheet" href="assets/css/components/slider.css">
     <script src="./assets/js/slider.js" defer></script>
     <script src="./assets/js/mainSlider.js" defer></script>
+    <script src="./assets/js/modal.js" defer></script>
     <title>Document</title>
 </head>
 
 
-<body>
+<body class="body">
+    <section class="sign-in__modal">
+        <div class="container">
+       
+            <div class="sign-in__modal__wrap">
+              
+                <div class="sign-in__modal__content">
+                    <div class="modal-close">
+                        <button class="modal-close__button" onclick="openModal()">
+                            <img src="./assets/img/closeModal.svg" alt="закрыть" class="close-icon">
+                        </button>
+                    </div>
+                    <h2 class="h2">
+                        Вход в аккаунт
+                    </h2>
+                    <form action="" class="modal__form">
+                        <div class="modal__form__inputs">
+                            <label class="modal__form__input-content">
+                                <p class="small-text">
+                                    Логин
+                                </p>
+                                <input type="text" class="modal-input">
+                            </label>
+        
+                            <label class="modal__form__input-content">
+                                <p class="small-text">
+                                    Пароль
+                                </p>
+                                <input type="password" class="modal-input">
+                            </label>
+                        </div>
+
+    
+                        <button type="submit"  class="main-button modal__form-button"><p>Войти</p></button>
+    
+                    </form>
+                    <div class="modal__help-txt">
+                        <a href="#">
+                            <p class="small-text">
+                                Не получается войти? Свяжитесь с нами!
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
     <header class="header">
         <div class="container">
             <div class="header__content">
                 <nav class="header__content__menu">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    <div class="header__content__menu-burger__wrap">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"
                         class="header__content__menu-burger">
                         <rect width="40" height="40" rx="20" fill="#0676B3" />
                         <path
                             d="M13.5714 12.5H18.9286C19.2127 12.5 19.4853 12.658 19.6862 12.9393C19.8871 13.2206 20 13.6022 20 14C20 14.3978 19.8871 14.7794 19.6862 15.0607C19.4853 15.342 19.2127 15.5 18.9286 15.5H13.5714C13.2873 15.5 13.0147 15.342 12.8138 15.0607C12.6129 14.7794 12.5 14.3978 12.5 14C12.5 13.6022 12.6129 13.2206 12.8138 12.9393C13.0147 12.658 13.2873 12.5 13.5714 12.5ZM21.0714 24.5H26.4286C26.7127 24.5 26.9853 24.658 27.1862 24.9393C27.3871 25.2206 27.5 25.6022 27.5 26C27.5 26.3978 27.3871 26.7794 27.1862 27.0607C26.9853 27.342 26.7127 27.5 26.4286 27.5H21.0714C20.7873 27.5 20.5147 27.342 20.3138 27.0607C20.1129 26.7794 20 26.3978 20 26C20 25.6022 20.1129 25.2206 20.3138 24.9393C20.5147 24.658 20.7873 24.5 21.0714 24.5ZM13.5714 18.5H26.4286C26.7127 18.5 26.9853 18.658 27.1862 18.9393C27.3871 19.2206 27.5 19.6022 27.5 20C27.5 20.3978 27.3871 20.7794 27.1862 21.0607C26.9853 21.342 26.7127 21.5 26.4286 21.5H13.5714C13.2873 21.5 13.0147 21.342 12.8138 21.0607C12.6129 20.7794 12.5 20.3978 12.5 20C12.5 19.6022 12.6129 19.2206 12.8138 18.9393C13.0147 18.658 13.2873 18.5 13.5714 18.5Z"
                             fill="white" />
                     </svg>
+                    </div>
                     <div class="header__content__menu-logo__wrapper">
                         <img src="assets/img/Logo.png" alt="логотип" class="header__content__menu-logo">
                     </div>
@@ -47,7 +98,7 @@
                             </div>
 
                         </a>
-                        <a href="#" class="header__content__menu-profile">
+                        <a class="header__content__menu-profile" onclick="openModal()">
                             <div class="header__content__menu-link__wrapper">
                                 <svg width="16" height="22" viewBox="0 0 16 22" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -223,53 +274,7 @@
 
     </div>
     </section>
-<section class="block">
-    <div class="container">
-        <div class="top__slider__content">
-            <div class="title__wrap center">
-                <p class="title">Комплексные исследования</p>
-                <div class="title__wrap-line">
-    
-                </div>
-            </div>
-            <div class="arrows__slider">
-                <button class="slider-arrow" onclick="prevSlide()">
-                    <img src="./assets/img/arrowLeft.svg" alt="">
-                </button>
-                    <button class="slider-arrow" onclick="nextSlide()">
-                    <img src="./assets/img/arrowRight.svg" alt="">
-                </button>
-            </div>
-        </div>
 
-    </div>
-        <div class="slider__content">
-   
-
-            <div class="slider__wrap">
-                <div class="slider__cards__content">
-                    <div class="slider__card dark">
-                        <div class="h4-sb-32">Инженерно-геологические изыскания</div>
-
-                        <img src="./assets/img/slide1.svg" alt="">
-                    </div>
-                    <div class="slider__card">
-                        <img src="./assets/img/slide1.svg" alt="">
-                        <div class="h4-sb-32">Инженерно-геологические изыскания</div>
-                    </div>
-                    <div class="slider__card">
-                        <img src="./assets/img/slide1.svg" alt="">
-                        <div class="h4-sb-32">Инженерно-геологические изыскания</div>
-                    </div>
-                    <div class="slider__card">
-                        <img src="./assets/img/slide1.svg" alt="">
-                        <div class="h4-sb-32">Инженерно-геологические изыскания</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-</section>
     <section class="block">
         <div class="container">
             <div class="block-about_us__content">
@@ -296,11 +301,61 @@
                         <p>Аттестат аккредитации</p>
                     </a>
                 </div>
+                <img src="./assets/img/vectorDecor.svg" alt="" class="vector-decor">
             </div>
         </div>
+
     </section>
 
-    <section class="block block--border-radius block--dark">
+    <section class="block">
+        <div class="container">
+            <div class="top__slider__content">
+                <div class="title__wrap center">
+                    <p class="title">Комплексные исследования</p>
+                    <div class="title__wrap-line">
+        
+                    </div>
+                </div>
+                <div class="arrows__slider">
+                    <button class="slider-arrow" onclick="prevSlide()">
+                        <img src="./assets/img/arrowLeft.svg" alt="">
+                    </button>
+                        <button class="slider-arrow" onclick="nextSlide()">
+                        <img src="./assets/img/arrowRight.svg" alt="">
+                    </button>
+                </div>
+            </div>
+    
+        </div>
+            <div class="slider__content">
+       
+    
+                <div class="slider__wrap">
+                    <div class="slider__cards__content">
+                        <div class="slider__card dark">
+                            <div class="h4-sb-32">Инженерно-геологические изыскания</div>
+    
+                            <img src="./assets/img/slide1.svg" alt="">
+                        </div>
+                        <div class="slider__card">
+                            <img src="./assets/img/slide1.svg" alt="">
+                            <div class="h4-sb-32">Инженерно-геологические изыскания</div>
+                        </div>
+                        <div class="slider__card">
+                            <img src="./assets/img/slide1.svg" alt="">
+                            <div class="h4-sb-32">Инженерно-геологические изыскания</div>
+                        </div>
+                        <div class="slider__card">
+                            <img src="./assets/img/slide1.svg" alt="">
+                            <div class="h4-sb-32">Инженерно-геологические изыскания</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    </section>
+
+    <section class="block block-advantages block--border-radius block--dark">
         <div class="container">
             <div class="advantages__content">
                 <div class="advantages__content__card">
@@ -972,6 +1027,10 @@
                 </div>
             </div>
         </div>
+        <img src="./assets/img/vectorDecor.svg" class="vector-decor advatage-vector-1">
+        <img src="./assets/img/vectorDecor.svg" class="vector-decor advatage-vector-2">
+        <img src="./assets/img/vectorDecor.svg" class="vector-decor advatage-vector-3">
+        <img src="./assets/img/vectorDecor.svg" class="vector-decor advatage-vector-4">
     </section>
 
     <section class="block block--border-radius block--minus-margin">
@@ -1058,6 +1117,7 @@
 
             </div>
         </div>
+
     </section>
 
     <section class="block">

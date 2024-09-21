@@ -1,3 +1,5 @@
+
+
 .header {
     width: 100%;
     /* backdrop-filter: blur(100px); */
@@ -42,6 +44,17 @@ height: 2.5rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: all ease-in-out 0.3s;
+
+}
+
+.header__content__menu-link__wrapper:hover path{
+    fill: #fff;
+
+}
+
+.header__content__menu-link__wrapper:hover{
+    background: var(--blue);
 
 }
 
@@ -74,12 +87,18 @@ color: #fff;
 }
 .header__content__menu-logo {
 }
+.header__content__menu-burger__wrap{
+    width: 181.35px;
+}
 .header__content__menu-right-nav {
     display: flex;
     align-items: center;
     gap: 23px;
+    width: 181.35px;
+    justify-content: flex-end;
 }
 .header__content__menu-basket-link {
 }
 .header__content__menu-profile {
+    cursor: pointer;
 }
