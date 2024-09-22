@@ -89,7 +89,17 @@ color: #fff;
 .burger-menu-icon{
     cursor: pointer;
 }
-.burger-menu-icon 
+.burger-menu-icon svg{
+    transition: all ease-in-out 0.3s;
+
+}
+.burger-menu-icon svg:hover path{
+fill: #0676B3;
+}
+
+.burger-menu-icon svg:hover rect{
+    fill: #fff;
+    }
 .header__content__menu-logo {
 }
 .header__content__menu-burger__wrap{
@@ -133,7 +143,7 @@ color: #fff;
 .burger-menu__wrap {
     position: fixed;
     height: 100vh;
-    padding: 90px 72px;
+    padding: 71px 72px;
     background: #fff;
     z-index: 1001;
     display: flex;
