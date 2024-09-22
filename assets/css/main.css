@@ -7,6 +7,14 @@
 	--dark-blue: #07141a;
 	--white: #fff;
 }
+.sertificat-image{
+    width: 100%;
+    height: -webkit-fill-available;
+}
+.sertificat-img-wrap{
+    border-radius: 25px;
+    overflow: hidden;
+}
 
 .lazy{
     background: #c5c5c68d;
@@ -74,6 +82,15 @@ line-height: 100%;
 text-align: center;
 color: var(--dark-blue);
 }
+
+.h3-b-24{
+    font-family: 'Road Radio';
+    font-weight: 700;
+font-size: 1.5rem;
+line-height: 100%;
+letter-spacing: 0.01em;
+
+}
 .h4{
     font-family: 'Mulish';
     font-weight: 400;
@@ -104,7 +121,7 @@ letter-spacing: 0.01em;
     font-size: 22px;
     font-size: 1.15vw;
     font-weight: 400;
-    line-height: 176%;
+    line-height: 150%;
     letter-spacing: -0.01em;
     text-align: center;
 }
@@ -122,10 +139,10 @@ letter-spacing: -0.01em;
 .title {
     font-family: 'Road Radio';
     font-weight: 700;
-    font-size: 4.25rem;
+    font-size: 4rem;
     font-size: 3.33vw;
-    line-height: 102%;
-    /* letter-spacing: -0.03em; */
+    line-height: 100%;
+    letter-spacing: -0.03em;
     color: #050f27;
     /* text-align: center; */
     }
@@ -135,6 +152,9 @@ letter-spacing: -0.01em;
     flex-direction: column;
     gap: 1.25rem;
     padding-bottom: 2.5rem;
+}
+.padding-none{
+    padding: 0;
 }
 .title__wrap.center{
     margin: 0 auto;

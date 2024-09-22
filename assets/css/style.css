@@ -43,7 +43,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 1%;
-    height: auto;
+    height: 850px;
     position: relative;
     color: #050F27;
     
@@ -57,17 +57,17 @@
 
 .block-about_us__content-clients-info {
     position: absolute;
-    right: 75px;
-    top: 75px;
+    right: 70px;
+    top: 59px;
 }
 
 .clients-info-text {
     font-family: 'Road Radio';
-font-size: 64.59px;
-font-weight: 700;
-line-height: 76.33px;
-text-align: left;
-
+    font-size: 64.59px;
+    /* font-weight: 800; */
+    line-height: 50.33px;
+    text-align: left;
+    /* border: 1px solid black; */
 }
 
 
@@ -78,17 +78,16 @@ text-align: left;
 }
 
 .block-about_us__content-info {
-    height: 1085px;
+    height: 850px;
     background: #E8F6FE;
     border-radius: 2.5rem;
     color: #050f27;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 3.7rem;
+    gap: 37px;
     text-align: left;
-    padding: 272px 80px 212px 142px;
-    
+    padding: 192px 90px;
 }
 
 .block-about_us__content-info p{
