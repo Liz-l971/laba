@@ -1515,3 +1515,380 @@ cart
     
     }
     }
+
+
+    @media (max-width:440px) {
+
+        /*
+            banner
+        */
+        
+            .banner__content {
+                gap: 30px;
+        
+            }
+        
+            .banner__content-text {
+                width: 100%;
+                gap: 15px;
+            }
+        
+        /*
+            banner
+        */
+        
+        /*
+            researches
+        */
+        
+        .researches__list{
+            height: 1200px;
+        }
+        .researches__wrap {
+            flex-direction: column;
+            height: 596px;
+        }
+        .researches__content {
+            width: 100%;
+            max-height: 300px;
+            height: 300px;
+            
+        }
+        
+        .researches__content-card {
+            border-radius: 10px;
+        }
+        
+        
+        
+        .small-height-card {
+            max-height: 150px;
+        }
+        
+        
+        
+        .researches__content-image {
+            height: 223px;
+        }
+        
+        
+        .researches__content-image-small-height {
+            height: 80px;
+        }
+
+        .small-card img{
+            height: 100px;
+        }
+        
+        .researches__content-image-unical {
+            height: 100px;
+        
+        }
+        
+        .researches__card-button{
+            padding: 0 15px;
+            gap: 10px;
+            height:56px;
+        }
+        .researches__card-button.small{
+            padding: 0 15px;
+            height: 56px;
+    
+        }
+    
+        .researches__card-button.small.small-txt p{
+        max-width: 90px;
+        }
+        
+        .researches__card-button p{
+     
+        font-size: 18px;
+        word-break: break-all;
+    
+        }
+        .arrow-dark-image{
+            width: 40px;
+            height: 40px;
+        }    
+        
+        .researches__unical__block .background__small{
+            padding: 10px 0 0 10px;
+            border-radius: 10px 0 0 0;
+            right: -0.5px;
+            width: 51.5%;
+        }
+        .researches__card-unical-radius-mask{
+        
+            top: 86px;
+        }
+        
+        /*
+            researches
+        */
+        
+        /*
+            about us
+        */
+        
+        .block-about_us__content-img{
+            width: 79px;
+        }
+        
+        .block-about_us__content {
+            height: 500px;
+            gap: 10px;
+        }
+        .block-about_us__content .title{
+            font-size: 32px;
+
+        }
+        
+        .block-about_us__content .vector-decor {
+            bottom: -38px;
+        }
+        
+        .block-about_us__content-clients-info {
+         display: none;
+        }
+        
+        
+        
+        .block-about_us__content-img {
+            border-radius: 10px;
+        
+        }
+        
+        .block-about_us__content-info {
+            height: 500px;
+            border-radius: 10px;
+            gap: 10px;
+            padding: 86px 5px;
+        }
+        
+        /*
+        slider compleks
+        
+        */
+        
+        .slider__wrap {
+        
+            height: 156px;
+            overflow: scroll;
+        }
+        .slider__wrap::-webkit-scrollbar {
+            display: none; 
+        }
+        
+        .slider__wrap {
+            scrollbar-width: none;
+        }
+        
+        .slider__wrap {
+            -ms-overflow-style: none; 
+        }
+        .slider__cards__content {
+            gap: 10px;
+            width: 1294px;
+        }
+        
+        .slider__card {
+            width: 300px;
+            height: 156px;
+        }
+        
+        .slider__card img {
+            right: 10px;
+            top: 10px;
+        }
+        
+        .slider__card .h4-sb-32 {
+            bottom: 10px;
+        }
+
+        
+        .top__slider__content .title__wrap {
+            text-align: center;
+        }
+        
+        .arrows__slider {
+            display: none;
+        }
+        
+        
+        .slider__card-img{
+            max-width: 125px;
+        }
+        
+        
+        /**
+            advantages
+        **/
+        
+        .block-advantages .vector-decor.advatage-vector-1 {
+            left: -18px;
+            top: -4%;
+        }
+        
+        .block-advantages .vector-decor.advatage-vector-2 {
+            right: -12px;
+            bottom: -8px;
+            top: unset;
+        }
+        
+        .block-advantages .vector-decor.advatage-vector-3 {
+           display: none;
+        }
+        
+        .block-advantages .vector-decor.advatage-vector-4 {
+           display: none;
+        }
+        
+        .advantages__content {
+            gap: 10px;
+            width: 100%;
+        }
+        
+        .advantages__content__card {
+        
+            gap: 10px;
+        }
+        
+        .advantages__content__card__text {
+            gap: 10px;
+        }
+        
+        
+        
+        .advantages__content__card__image-image {
+            width: 100%;
+            height: 217px;
+            border-radius: 10px;
+        }
+        
+        .advantages__image-item {
+         
+            padding: 10px;
+        }
+        .advantages__image-item svg{
+            width: 30px;
+            height: 30px;
+        }
+        
+        
+        
+        /*
+            work wteps
+        */
+        
+        .work-steps__content {
+        
+            height: 212px;
+            margin-top: 20px;
+        }
+        
+        .steps__content-center-icon {
+            top: 26px;
+            width: 107px;
+        }
+        
+        
+        .work-steps__content__step-card {
+        
+        gap: 10px;
+        
+        max-width: 223px;
+        
+        /* width: 41%; */
+        }
+        .step__card-icon{
+            max-width: 74px;
+            max-height: 77px;
+        }
+        
+        .work-steps__content__step-card:nth-child(6) {
+            top: 96px;
+            right: 0;
+        }
+        
+        .step__card-text {
+        
+            gap: 4px;
+        }
+        
+        .step__card-text .h5-b-120 {
+            text-align: left;
+        }
+        
+        .step__card-text .main-text {
+            text-align: left;
+        }
+        
+        /*
+            counts
+        */
+        
+        .counts__content {
+            height: 230px;
+        }
+        
+        .counts__content__text {
+            gap: 10px;
+            width: 210px;
+        }
+        
+        
+        
+        .counts__content__cards-card {
+        
+            border-radius: 10px;
+            padding: 6% 10px;
+        }
+        
+        
+        /*
+            ask-form
+        */
+        
+        .ask-form__content {
+            gap: 10px;
+        }
+        
+        .ask-form__content__form {
+            border-radius: 10px;
+            padding: 16px 4%;
+        }
+        
+        .ask-form__content__form-input {
+            border-radius: 30px;
+            padding: 9px 10px;
+            width: 150px;
+            height: 30px;
+            font-size: 10px;
+            font-size: 1.15vw;
+        
+        }
+        /*
+            trust
+        */
+        .unical-background{
+            padding: 112px 0;
+        }
+        .trust-block__content .main-text{
+        max-width: 220px;
+        }
+        
+        /*
+        cart
+        */
+        .cart {
+            position: relative;
+            height: 320px;
+        }
+        
+        .cart__circle {
+            width: 130px;
+            height: 130px;
+        
+        }
+        }
+    
