@@ -1108,7 +1108,36 @@ cart
 }
 }
 
+@media (max-width:1024px){
+    .arrow-dark-image{
+        width: 25px;
+        height: 25px;
+    }
 
+    .researches__card-button.small {
+        padding: 0 10px;
+    }
+    .block-about_us__content-clients-info {
+        position: absolute;
+        right: 50px;
+        top: 36px;
+    }
+}
+
+@media (max-width:940px){
+    .block-about_us__content-clients-info{
+        display: none;
+    }
+
+    .steps__content-center-icon {
+        top: 82px;
+        width: 171px;
+    }
+
+    .counts__content {
+        height: 339px;
+    }
+}
 
 @media (max-width:640px) {
 
