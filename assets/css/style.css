@@ -1725,32 +1725,43 @@ cart
         **/
         
         .block-advantages .vector-decor.advatage-vector-1 {
-            left: -18px;
-            top: -4%;
+          display: none;
         }
         
         .block-advantages .vector-decor.advatage-vector-2 {
-            right: -12px;
-            bottom: -8px;
-            top: unset;
-        }
-        
-        .block-advantages .vector-decor.advatage-vector-3 {
            display: none;
         }
         
-        .block-advantages .vector-decor.advatage-vector-4 {
-           display: none;
-        }
+    
         
         .advantages__content {
-            gap: 10px;
+            gap: 50px;
             width: 100%;
         }
-        
-        .advantages__content__card {
-        
+        .advantages__content__card{
+            display: flex;
             gap: 10px;
+
+        }
+
+    .advantages__content__card__image {
+        width: 100%;
+    }
+        
+        .advantages__content__card:nth-child(1) {
+            flex-direction: column-reverse;
+        }
+
+        .advantages__content__card:nth-child(2) {
+            flex-direction: column;
+        }
+
+        .advantages__content__card:nth-child(3) {
+            flex-direction: column-reverse;
+        }
+
+        .advantages__content__card:nth-child(4) {
+            flex-direction: column;
         }
         
         .advantages__content__card__text {
@@ -1759,20 +1770,9 @@ cart
         
         
         
-        .advantages__content__card__image-image {
-            width: 100%;
-            height: 217px;
-            border-radius: 10px;
-        }
+  
         
-        .advantages__image-item {
-         
-            padding: 10px;
-        }
-        .advantages__image-item svg{
-            width: 30px;
-            height: 30px;
-        }
+  
         
         
         
@@ -1782,13 +1782,14 @@ cart
         
         .work-steps__content {
         
-            height: 212px;
+            height: 738px;
             margin-top: 20px;
         }
         
         .steps__content-center-icon {
-            top: 26px;
-            width: 107px;
+            top: 0px;
+            left:0px;
+            width: 150px;
         }
         
         
@@ -1796,19 +1797,52 @@ cart
         
         gap: 10px;
         
-        max-width: 223px;
+        max-width: 100%;
         
-        /* width: 41%; */
+        width: 100%;
         }
         .step__card-icon{
-            max-width: 74px;
-            max-height: 77px;
+            max-width: 100%;
+            max-height: none;
         }
         
-        .work-steps__content__step-card:nth-child(6) {
-            top: 96px;
+        .work-steps__content__step-card:nth-child(3) {
+            top: 0;
             right: 0;
+            flex-direction: column;
+            gap: 10px;
+            width: 56%;
+            align-items: flex-start;
+            left: 49%;
         }
+
+        .work-steps__content__step-card:nth-child(2) {
+            top: unset;
+            left: 0;
+            display: flex;
+            align-items: flex-end;
+            bottom: 0;
+        }
+        .work-steps__content__step-card:nth-child(4) {
+            top: unset;
+            left: 0;
+            bottom: 134px;
+            flex-direction: row-reverse;
+            align-items: flex-end;
+        }
+        .work-steps__content__step-card:nth-child(5) {
+            bottom: 286px;
+            right: 0;
+            flex-direction: row-reverse;
+            width: 80%;
+        }    
+        .work-steps__content__step-card:nth-child(6) {
+            top: 163px;
+            left: 0;
+            align-items: flex-end;
+            width: 90%;
+        }
+
         
         .step__card-text {
         
@@ -1821,60 +1855,91 @@ cart
         
         .step__card-text .main-text {
             text-align: left;
+            font-size: 12px;
         }
         
         /*
             counts
         */
-        
+        .large-count-text{
+            font-size: 64px;
+        }
         .counts__content {
-            height: 230px;
+            flex-direction: column;
+            height: 622px;
+
         }
         
         .counts__content__text {
             gap: 10px;
-            width: 210px;
+            width: 100%;
         }
-        
+        .counts__content__text .title{
+            text-align: center;
+        }
+        .counts__content__cards {
+            width: 100%;
+        }
         
         
         .counts__content__cards-card {
         
-            border-radius: 10px;
-            padding: 6% 10px;
+            border-radius: 20px;
+            padding: 10% 10px;
+            width: 75%;
+        }
+        .counts__content__cards-card:nth-child(1) {
+            top: 0;
+            right: unset;
+            bottom: unset;
+        }
+        .counts__content__cards-card:nth-child(2) {
+            bottom: 33%;
+            right: 0;
         }
         
         
         /*
             ask-form
         */
-        
+        .block .title{
+            text-align: center;
+        }
         .ask-form__content {
             gap: 10px;
         }
         
         .ask-form__content__form {
             border-radius: 10px;
-            padding: 16px 4%;
+            padding: 16px 30px;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
         }
-        
+        .main-text.left{
+            text-align: center;
+        }
         .ask-form__content__form-input {
             border-radius: 30px;
-            padding: 9px 10px;
-            width: 150px;
-            height: 30px;
-            font-size: 10px;
-            font-size: 1.15vw;
-        
+            padding: 13px 10px;
+            width: 100%;
+            height: 44px;
+            font-size: 14px;
+           
+            /* font-size: 1.15vw; */
+            
         }
         /*
             trust
         */
+        .backround-vector{
+            object-fit: fill;
+        }
         .unical-background{
-            padding: 112px 0;
+            padding: 234px 0;
         }
         .trust-block__content .main-text{
-        max-width: 220px;
+        max-width: 100%;
         }
         
         /*
@@ -1882,12 +1947,12 @@ cart
         */
         .cart {
             position: relative;
-            height: 320px;
+            height: 600px;
         }
         
         .cart__circle {
-            width: 130px;
-            height: 130px;
+            width: 239px;
+            height: 239px;
         
         }
         }

@@ -160,7 +160,7 @@ fill: #0676B3;
     transition: all ease-in-out 0.5s;
     transform: translateX(0px);
 }
-.burger-close {margin-bottom: 50%;}
+.burger-close {margin-bottom: 65%;}
 .modal-close__button {
 }
 .close-icon {
@@ -240,7 +240,50 @@ fill: #0676B3;
     
     }
 
+    .modal-close__button img{
+        width: 16px;
+        height: 16px;
     }
+
+    .burger-menu__wrap {
+        padding: 59px 45px;
+    }
+
+    .burger-menu__list-link {
+        gap: 15px;
+    }
+
+    }
+
+@media (max-width:640px){
+    .modal-close__button img{
+        width: 9px;
+        height: 9px;
+    }
+
+    .burger-menu__wrap {
+        padding: 14px 31px;
+    }
+
+    .burger-menu__list-link {
+        gap: 8px;
+    }
+}
+
+@media (max-width:440px){
+    .modal-close__button img{
+        width: 16px;
+        height: 16px;
+    }
+
+    .burger-menu__wrap {
+        padding: 59px 45px;
+    }
+
+    .burger-menu__list-link {
+        gap: 15px;
+    }
+}
 
 
     @media (max-width:820px){
