@@ -81,6 +81,7 @@
 .block-about_us__content-img {
     border-radius: 2.5rem;
     object-fit: cover;
+    height: -webkit-fill-available;
 
 }
 

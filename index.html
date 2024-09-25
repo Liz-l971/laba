@@ -36,26 +36,26 @@
     </div>
     <div class="burger-menu__list">
         <div class="burger-menu__list-link">
-            <a href="#" class="burger-menu-link">
+            <a href="#about" class="burger-menu-link" onclick="openBurger()">
                 <h3 class="h3-b-24">О компании</h3>
             </a>
-            <a href="#" class="burger-menu-link">
-                <h3 class="h3-b-24">О компании</h3>
+            <a href="#services" class="burger-menu-link" onclick="openBurger()">
+                <h3 class="h3-b-24">Услуги</h3>
             </a>
-            <a href="#" class="burger-menu-link">
-                <h3 class="h3-b-24">О компании</h3>
+            <a data-fancybox href="#hidden" class="burger-menu-link" onclick="openBurger()">
+                <h3 class="h3-b-24">Аккредитация</h3>
             </a>
-            <a href="#" class="burger-menu-link">
-                <h3 class="h3-b-24">О компании</h3>
+            <a href="#why" class="burger-menu-link" onclick="openBurger()">
+                <h3 class="h3-b-24">Преимущества</h3>
             </a>
-            <a href="#" class="burger-menu-link">
-                <h3 class="h3-b-24">О компании</h3>
+            <a href="#steps" class="burger-menu-link" onclick="openBurger()">
+                <h3 class="h3-b-24">Этапы работ</h3>
             </a>
-            <a href="#" class="burger-menu-link">
-                <h3 class="h3-b-24">О компании</h3>
+            <a href="#clients" class="burger-menu-link" onclick="openBurger()">
+                <h3 class="h3-b-24">Клиенты</h3>
             </a>
-            <a href="#" class="burger-menu-link">
-                <h3 class="h3-b-24">О компании</h3>
+            <a href="#cart" class="burger-menu-link" onclick="openBurger()">
+                <h3 class="h3-b-24">Где нас найти</h3>
             </a>
             
         </div>
@@ -139,13 +139,13 @@
                     </svg>
                     </div>
                     </div>
-                    <div class="header__content__menu-logo__wrapper">
+                    <a href="#" class="header__content__menu-logo__wrapper">
                         <img src="assets/img/headerLogo-large.svg"
                         srcset="./assets/img/headerLogo-medium.svg 100w"
                         sizes="(max-width: 1200px) 100px,
                             110px"
                         alt="логотип" class="header__content__menu-logo">
-                    </div>
+                    </a>
                     <div class="header__content__menu-right-nav">
 
                         <a href="#" class="header__content__menu-basket-link">
@@ -212,7 +212,7 @@
         </div>
     </section>
 
-    <section class="block block-researches block--border-radius block--first block--minus-margin">
+    <section id="services" class="block block-researches block--border-radius block--first block--minus-margin">
         <div class="container">
             <div class="title__wrap center">
                 <p class="title center">Наши исследования</p>
@@ -350,28 +350,11 @@
     
                 </div>
                     <div class="researches__content">
-                        <div class="researches__content-card small-height-card">
-                            <img data-src="./assets/img/researches_2.png" alt="" class="lazy researches__content-image-small-height">
-                            <a class="researches__card-button small">
-                                <p>
-                                    Вода
-                                </p>
-                                <img src="./assets/img/arrowDark.svg"
-                                srcset="./assets/img/arrowDark-medium.svg 40w"
-                                srcset="./assets/img/arrowDark-small.svg 25w"
-                                sizes="(max-width: 1200px) 40px,
-                                (max-width: 640px) 25px,
-                                (max-width: 375px) 40px,
-                                    60px" 
-                                 class="arrow-dark-image">
-                            </a>
-                        </div>
-    
                         <div class="researches__content-card small-height-card small-card " >
-                            <img data-src="./assets/img/researches_3.png" alt="" class="lazy researches__content-image-small-height">
-                            <a class="researches__card-button small small-txt">
+                            <img data-src="./assets/img/researches_6.png" alt="" class="lazy researches__content-image-small-height">
+                            <a href="#" class="researches__card-button small small-txt">
                                 <p>
-                                    Грунты
+                                    Донные отложения
                                 </p>
                                 <img src="./assets/img/arrowDark.svg"
                                 srcset="./assets/img/arrowDark-medium.svg 40w"
@@ -386,10 +369,10 @@
                         </div>
     
                         <div class="researches__content-card small-height-card small-card" >
-                            <img data-src="./assets/img/researches_4.png" alt="" class="lazy researches__content-image-small-height">
-                            <a class="researches__card-button small small-txt">
+                            <img data-src="./assets/img/researches_7.png" alt="" class="lazy researches__content-image-small-height">
+                            <a href="#" class="researches__card-button small small-txt">
                                 <p>
-                                    Воздух
+                                    Отходы
                                 </p>
                                 <img src="./assets/img/arrowDark.svg"
                                 srcset="./assets/img/arrowDark-medium.svg 40w"
@@ -402,6 +385,24 @@
     
                             </a>
                         </div>
+                        <div class="researches__content-card small-height-card">
+                            <img data-src="./assets/img/researches_8.png" alt="" class="lazy researches__content-image-small-height">
+                            <a href="#" class="researches__card-button small">
+                                <p>
+                                    Конструкции строительные
+                                </p>
+                                <img src="./assets/img/arrowDark.svg"
+                                srcset="./assets/img/arrowDark-medium.svg 40w"
+                                srcset="./assets/img/arrowDark-small.svg 25w"
+                                sizes="(max-width: 1200px) 40px,
+                                (max-width: 640px) 25px,
+                                (max-width: 375px) 40px,
+                                    60px" 
+                                 class="arrow-dark-image">
+                            </a>
+                        </div>
+    
+
     
                 </div>            
     
@@ -414,7 +415,7 @@
 
  
 
-    <section class="block">
+    <section class="block" id="about">
         <div class="container">
             <div class="block-about_us__content">
                 <div class="block-about_us__content-clients-info">
@@ -473,7 +474,7 @@
 
     </section>
 
-    <section class="block">
+    <section class="block" id="researches">
         <div class="container">
             <div class="top__slider__content">
                 <div class="title__wrap center">
@@ -507,21 +508,21 @@
                 <div class="slider__wrap">
                     <div class="slider__cards__content">
                         <div class="slider__card dark">
+                            <img src="./assets/img/slide1.svg" class="slider__card-img">
                             <div class="h4-sb-32">Инженерно-геологические изыскания</div>
     
-                            <img src="./assets/img/slide1.svg" class="slider__card-img">
                         </div>
                         <div class="slider__card">
-                            <img src="./assets/img/slide1.svg" class="slider__card-img">
-                            <div class="h4-sb-32">Инженерно-геологические изыскания</div>
+                            <img src="./assets/img/slide2.svg" class="slider__card-img">
+                            <div class="h4-sb-32">Почва для определения плодородности</div>
                         </div>
                         <div class="slider__card">
-                            <img src="./assets/img/slide1.svg"class="slider__card-img">
-                            <div class="h4-sb-32">Инженерно-геологические изыскания</div>
+                            <img src="./assets/img/slide3.svg"class="slider__card-img">
+                            <div class="h4-sb-32">Закарстованные территории</div>
                         </div>
                         <div class="slider__card">
-                            <img src="./assets/img/slide1.svg" class="slider__card-img">
-                            <div class="h4-sb-32">Инженерно-геологические изыскания</div>
+                            <img src="./assets/img/slide4.svg" class="slider__card-img">
+                            <div class="h4-sb-32">Питьевая вода</div>
                         </div>
                     </div>
                 </div>
@@ -529,7 +530,7 @@
     
     </section>
 
-    <section class="block block-advantages block--border-radius block--dark">
+    <section id="why" class="block block-advantages block--border-radius block--dark">
         <div class="container">
             <div class="advantages__content">
                 <div class="advantages__content__card">
@@ -1244,10 +1245,10 @@
          class="vector-decor advatage-vector-4">
     </section>
 
-    <section class="block block--border-radius block--minus-margin">
+    <section id="steps" class="block block--border-radius block--minus-margin">
         <div class="container">
             <div class="title__wrap center">
-                <p class="title center">Наши исследования</p>
+                <p class="title center">Этапы работы</p>
                 <div class="title__wrap-line"></div>
             </div>
             <div class="work-steps__content">
@@ -1328,7 +1329,7 @@
 
     </section>
 
-    <section class="block">
+    <section id="counts" class="block">
         <div class="container">
             <div class="counts__content">
                 <div class="counts__content__text">
@@ -1369,7 +1370,7 @@
             </div>
         </div>
     </section>
-    <div class="marquee">
+    <div id="clients" class="marquee">
         <ul class="marquee-content">
 
                 <li><img src="./assets/img/partners/partner1.svg" alt=""></li>
@@ -1384,7 +1385,7 @@
         </ul>
     </div>
 
-   <section class="block block--border-radius block--minus-margin ligh-blue block--padding-bottom">
+   <section id="consultation" class="block block--border-radius block--minus-margin ligh-blue block--padding-bottom">
         <div class="container">
             <div class="title__wrap center">
                 <p class="title">Остались вопросы?</p>
@@ -1426,7 +1427,7 @@
             </div>
         </div>
     </section>
-    <section class="cart">
+    <section id="cart" class="cart">
         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A557da09633524c9f093f9a3e3828e310f415e254e2123c52c12c1ed32248ef5a&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
         <div class="cart__circle"><p class="main-text"><b>
             г. Дзержинск, ул. Клюквина, д. 4А, помещение 2
@@ -1514,56 +1515,42 @@
         <h5 class="h5-b-120">
             Компания
         </h5>
-            <a href="">
+            <a href="#about">
                 <p class="small-text">
-                    Грунты
+                    О компании
                 </p>
             </a>
-            <a href="">
+            <a data-fancybox href="#hidden">
                 <p class="small-text">
-                    Грунты
+                    Аккредитация
                 </p>
             </a>
-            <a href="">
+            <a href="#researches">
                 <p class="small-text">
-                    Грунты
+                    Исследования
                 </p>
             </a>
-            <a href="">
+            <a href="#why">
                 <p class="small-text">
-                    Грунты
+                    Почему мы
                 </p>
             </a>
-            <a href="">
+            <a href="#steps">
                 <p class="small-text">
-                    Грунты
+                    Этапы испытаний
                 </p>
             </a>
-            <a href="">
+            <a href="#cart">
                 <p class="small-text">
-                    Грунты
+                    Где нас найти
                 </p>
             </a>
-            <a href="">
+            <a href="#consultation">
                 <p class="small-text">
-                    Грунты
+                    Консультация
                 </p>
             </a>
-            <a href="">
-                <p class="small-text">
-                    Грунты
-                </p>
-            </a>
-            <a href="">
-                <p class="small-text">
-                    Грунты
-                </p>
-            </a>
-            <a href="">
-                <p class="small-text">
-                    Грунты
-                </p>
-            </a>
+    
     </div>
 </div>
             </div>
