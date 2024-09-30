@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/researches.css">
+    <link rel="stylesheet" href="assets/css/components/slider.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <script src="./assets/js/slider.js" defer></script>
+    <script src="./assets/js/mainSlider.js" defer></script>
+    <script src="./assets/js/modal.js" defer></script>
+    <script src="./assets/js/loadImage.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/libs/fancy-bax.css">
+    <title>Document</title>
+</head>
+
+
+<body class="body">
+
+<!-- burger -->
+<div class="dark-background">
+
+</div>
+
+<div class="burger-menu__wrap">
+    <div class="burger-close">
+        <button class="modal-close__button" onclick="openBurger()">
+            <img src="./assets/img/closeModal.svg" alt="закрыть" class="close-icon">
+        </button>
+    </div>
+    <div class="burger-menu__list">
+        <div class="burger-menu__list-link">
+            <a href="#about" class="burger-menu-link" onclick="openBurger()">
+                <h3 class="h3-b-24">О компании</h3>
+            </a>
+            <a href="#services" class="burger-menu-link" onclick="openBurger()">
+                <h3 class="h3-b-24">Услуги</h3>
+            </a>
+            <a data-fancybox href="#hidden" class="burger-menu-link" onclick="openBurger()">
+                <h3 class="h3-b-24">Аккредитация</h3>
+            </a>
+            <a href="#why" class="burger-menu-link" onclick="openBurger()">
+                <h3 class="h3-b-24">Преимущества</h3>
+            </a>
+            <a href="#steps" class="burger-menu-link" onclick="openBurger()">
+                <h3 class="h3-b-24">Этапы работ</h3>
+            </a>
+            <a href="#clients" class="burger-menu-link" onclick="openBurger()">
+                <h3 class="h3-b-24">Клиенты</h3>
+            </a>
+            <a href="#cart" class="burger-menu-link" onclick="openBurger()">
+                <h3 class="h3-b-24">Где нас найти</h3>
+            </a>
+            
+        </div>
+        <div class="burger-menu__contacts">
+            <a href="tel:+7 (831) 211-33-35"> <p class="small-text">тел. (831) 211-33-35</p> </a>
+            <a href="mailto:geopalitra@gmail.com"> <p class="small-text">geopalitra@gmail.com</p></a>
+        </div>
+    </div>
+</div>
+
+<!-- burger -->
+
+
+<!-- popup -->
+
+    <section class="sign-in__modal">
+        <div class="container">
+       
+            <div class="sign-in__modal__wrap">
+              
+                <div class="sign-in__modal__content">
+                    <div class="modal-close">
+                        <button class="modal-close__button" onclick="openModal()">
+                            <img src="./assets/img/closeModal.svg" alt="закрыть" class="close-icon">
+                        </button>
+                    </div>
+                    <h2 class="h2">
+                        Вход в аккаунт
+                    </h2>
+                    <form action="" class="modal__form">
+                        <div class="modal__form__inputs">
+                            <label class="modal__form__input-content">
+                                <p class="small-text">
+                                    Логин
+                                </p>
+                                <input type="text" class="modal-input">
+                            </label>
+        
+                            <label class="modal__form__input-content">
+                                <p class="small-text">
+                                    Пароль
+                                </p>
+                                <input type="password" class="modal-input">
+                            </label>
+                        </div>
+
+    
+                        <button type="submit"  class="main-button modal__form-button"><p>Войти</p></button>
+    
+                    </form>
+                    <div class="modal__help-txt">
+                        <a href="#">
+                            <p class="small-text">
+                                Не получается войти? Свяжитесь с нами!
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+<!-- popup -->
+
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <nav class="header__content__menu">
+                    <div class="header__content__menu-burger__wrap">
+                        <div class="burger-menu-icon" onclick="openBurger()">
+                            <svg  width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="header__content__menu-burger">
+                            <rect width="40" height="40" rx="20" fill="#0676B3" />
+                            <path
+                                d="M13.5714 12.5H18.9286C19.2127 12.5 19.4853 12.658 19.6862 12.9393C19.8871 13.2206 20 13.6022 20 14C20 14.3978 19.8871 14.7794 19.6862 15.0607C19.4853 15.342 19.2127 15.5 18.9286 15.5H13.5714C13.2873 15.5 13.0147 15.342 12.8138 15.0607C12.6129 14.7794 12.5 14.3978 12.5 14C12.5 13.6022 12.6129 13.2206 12.8138 12.9393C13.0147 12.658 13.2873 12.5 13.5714 12.5ZM21.0714 24.5H26.4286C26.7127 24.5 26.9853 24.658 27.1862 24.9393C27.3871 25.2206 27.5 25.6022 27.5 26C27.5 26.3978 27.3871 26.7794 27.1862 27.0607C26.9853 27.342 26.7127 27.5 26.4286 27.5H21.0714C20.7873 27.5 20.5147 27.342 20.3138 27.0607C20.1129 26.7794 20 26.3978 20 26C20 25.6022 20.1129 25.2206 20.3138 24.9393C20.5147 24.658 20.7873 24.5 21.0714 24.5ZM13.5714 18.5H26.4286C26.7127 18.5 26.9853 18.658 27.1862 18.9393C27.3871 19.2206 27.5 19.6022 27.5 20C27.5 20.3978 27.3871 20.7794 27.1862 21.0607C26.9853 21.342 26.7127 21.5 26.4286 21.5H13.5714C13.2873 21.5 13.0147 21.342 12.8138 21.0607C12.6129 20.7794 12.5 20.3978 12.5 20C12.5 19.6022 12.6129 19.2206 12.8138 18.9393C13.0147 18.658 13.2873 18.5 13.5714 18.5Z"
+                                fill="white" />
+                        
+
+                    </svg>
+                    </div>
+                    </div>
+                    <a href="#" class="header__content__menu-logo__wrapper">
+                        <img src="assets/img/headerLogo-large.svg"
+                        srcset="./assets/img/headerLogo-medium.svg 100w"
+                        sizes="(max-width: 1200px) 100px,
+                            110px"
+                        alt="логотип" class="header__content__menu-logo">
+                    </a>
+                    <div class="header__content__menu-right-nav">
+
+                        <a href="#" class="header__content__menu-basket-link">
+                            <div class="header__content__menu-link__wrapper">
+                                <svg class="basket_link-icon" width="16" height="15" viewBox="0 0 16 15" fill="#050F27"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.2055 15C5.73317 15 5.2802 14.8025 4.94622 14.4508C4.61224 14.0992 4.42461 13.6223 4.42461 13.125C4.42461 12.6277 4.61224 12.1508 4.94622 11.7992C5.2802 11.4475 5.73317 11.25 6.2055 11.25C6.67782 11.25 7.13079 11.4475 7.46477 11.7992C7.79876 12.1508 7.98638 12.6277 7.98638 13.125C7.98638 13.6223 7.79876 14.0992 7.46477 14.4508C7.13079 14.8025 6.67782 15 6.2055 15ZM12.4386 15C11.9663 15 11.5133 14.8025 11.1793 14.4508C10.8453 14.0992 10.6577 13.6223 10.6577 13.125C10.6577 12.6277 10.8453 12.1508 11.1793 11.7992C11.5133 11.4475 11.9663 11.25 12.4386 11.25C12.9109 11.25 13.3639 11.4475 13.6979 11.7992C14.0319 12.1508 14.2195 12.6277 14.2195 13.125C14.2195 13.6223 14.0319 14.0992 13.6979 14.4508C13.3639 14.8025 12.9109 15 12.4386 15ZM0.828993 1.80281C0.606704 1.79526 0.395917 1.69699 0.241209 1.52876C0.0865004 1.36054 0 1.13556 0 0.901406C0 0.667248 0.0865004 0.44227 0.241209 0.274048C0.395917 0.105825 0.606704 0.00754857 0.828993 0L1.85389 0C2.65708 0 3.35162 0.586875 3.52615 1.41188L4.64188 6.70125C4.8164 7.52625 5.51095 8.11312 6.31413 8.11312H13.0031L14.2872 2.70375H5.96597C5.74577 2.69317 5.53792 2.59363 5.38565 2.42583C5.23338 2.25803 5.14841 2.03489 5.14841 1.80281C5.14841 1.57074 5.23338 1.3476 5.38565 1.1798C5.53792 1.01199 5.74577 0.912454 5.96597 0.901875H14.2872C14.5475 0.901794 14.8044 0.964199 15.0383 1.08434C15.2723 1.20449 15.4772 1.37921 15.6374 1.59524C15.7975 1.81126 15.9089 2.06289 15.9628 2.331C16.0168 2.59911 16.012 2.87664 15.9487 3.1425L14.6647 8.55C14.5722 8.94018 14.3583 9.28658 14.0572 9.53409C13.7562 9.78159 13.3851 9.916 13.0031 9.91594H6.31413C5.53481 9.91605 4.77876 9.6363 4.17084 9.12291C3.56293 8.60951 3.13951 7.89317 2.97051 7.09219L1.85389 1.80281H0.828993Z"
+                                        fill="#050F27" />
+                                </svg>
+                                <div class="basket-link-badge">
+                                    <p>9</p>
+                                </div>
+                            </div>
+
+                        </a>
+                        <a class="header__content__menu-profile" onclick="openModal()">
+                            <div class="header__content__menu-link__wrapper">
+                                <svg width="16" height="22" viewBox="0 0 16 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1_519)">
+                                        <path
+                                            d="M4.28643 11.0735C4.41816 11.0184 4.55981 10.9898 4.70303 10.9893C4.84625 10.9888 4.98811 11.0164 5.12024 11.0705C5.25237 11.1247 5.37209 11.2042 5.4723 11.3045C5.57252 11.4048 5.65121 11.5237 5.70372 11.6543C5.75623 11.7849 5.7815 11.9244 5.77802 12.0647C5.77454 12.2051 5.7424 12.3433 5.68348 12.4712C5.62457 12.5991 5.54008 12.7142 5.43502 12.8096C5.32995 12.9049 5.20644 12.9787 5.07179 13.0265C4.35558 13.303 3.74089 13.7844 3.30768 14.4081C2.87448 15.0317 2.64282 15.7686 2.64286 16.523V18.35C2.64286 18.6285 2.75574 18.8955 2.95667 19.0925C3.1576 19.2894 3.43012 19.4 3.71429 19.4H12.2857C12.5699 19.4 12.8424 19.2894 13.0433 19.0925C13.2443 18.8955 13.3571 18.6285 13.3571 18.35V16.6206C13.3573 15.842 13.1159 15.0818 12.6651 14.4407C12.2143 13.7995 11.5753 13.3078 10.8329 13.0307C10.6974 12.9846 10.5727 12.9124 10.4662 12.8182C10.3598 12.724 10.2737 12.6098 10.2131 12.4825C10.1525 12.3551 10.1186 12.2171 10.1134 12.0766C10.1082 11.9361 10.1319 11.7961 10.1829 11.6648C10.234 11.5334 10.3115 11.4135 10.4108 11.312C10.51 11.2106 10.629 11.1297 10.7608 11.0742C10.8926 11.0186 11.0343 10.9896 11.1778 10.9887C11.3212 10.9879 11.4633 11.0153 11.5957 11.0693C12.7439 11.4979 13.732 12.2582 14.4293 13.2496C15.1265 14.241 15.4999 15.4166 15.5 16.6206V18.35C15.5 19.1854 15.1614 19.9866 14.5586 20.5774C13.9558 21.1681 13.1382 21.5 12.2857 21.5H3.71429C2.8618 21.5 2.04424 21.1681 1.44144 20.5774C0.838647 19.9866 0.5 19.1854 0.5 18.35L0.5 16.523C0.500147 15.3472 0.861368 14.1986 1.53667 13.2267C2.21198 12.2548 3.17011 11.5045 4.28643 11.0735ZM8 0.5C9.13664 0.5 10.2267 0.942499 11.0305 1.73015C11.8342 2.5178 12.2857 3.58609 12.2857 4.7V6.8C12.2857 7.91391 11.8342 8.9822 11.0305 9.76985C10.2267 10.5575 9.13664 11 8 11C6.86336 11 5.77327 10.5575 4.96954 9.76985C4.16581 8.9822 3.71429 7.91391 3.71429 6.8V4.7C3.71429 3.58609 4.16581 2.5178 4.96954 1.73015C5.77327 0.942499 6.86336 0.5 8 0.5V0.5ZM8 2.6C7.43168 2.6 6.88663 2.82125 6.48477 3.21508C6.08291 3.6089 5.85714 4.14305 5.85714 4.7V6.8C5.85714 7.35695 6.08291 7.8911 6.48477 8.28492C6.88663 8.67875 7.43168 8.9 8 8.9C8.56832 8.9 9.11336 8.67875 9.51523 8.28492C9.91709 7.8911 10.1429 7.35695 10.1429 6.8V4.7C10.1429 4.14305 9.91709 3.6089 9.51523 3.21508C9.11336 2.82125 8.56832 2.6 8 2.6Z"
+                                            fill="#050F27" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1_519">
+                                            <rect width="15" height="21" fill="white" transform="translate(0.5 0.5)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="block">
+        <div class="container">
+            <div class="researches__block-top-content">
+                <div class="menu-crumbs">
+                    <a href="#" class="menu-crumbs-link">
+                        <p class="small-text">
+                            Главная
+                        </p>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.3142 12.071L8.36421 7.12098C8.18205 6.93238 8.08126 6.67978 8.08353 6.41758C8.08581 6.15538 8.19098 5.90457 8.37639 5.71916C8.5618 5.53375 8.81261 5.42859 9.07481 5.42631C9.337 5.42403 9.58961 5.52482 9.77821 5.70698L15.4352 11.364C15.6227 11.5515 15.728 11.8058 15.728 12.071C15.728 12.3361 15.6227 12.5905 15.4352 12.778L9.77821 18.435C9.58961 18.6171 9.337 18.7179 9.07481 18.7157C8.81261 18.7134 8.5618 18.6082 8.37639 18.4228C8.19098 18.2374 8.08581 17.9866 8.08353 17.7244C8.08126 17.4622 8.18205 17.2096 8.36421 17.021L13.3142 12.071Z" fill="#050F27" />
+                        </svg>
+                    </a>
+                    <a href="index.html#services" class="menu-crumbs-link">
+                        <p class="small-text">
+                            Услуги
+                        </p>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.3142 12.071L8.36421 7.12098C8.18205 6.93238 8.08126 6.67978 8.08353 6.41758C8.08581 6.15538 8.19098 5.90457 8.37639 5.71916C8.5618 5.53375 8.81261 5.42859 9.07481 5.42631C9.337 5.42403 9.58961 5.52482 9.77821 5.70698L15.4352 11.364C15.6227 11.5515 15.728 11.8058 15.728 12.071C15.728 12.3361 15.6227 12.5905 15.4352 12.778L9.77821 18.435C9.58961 18.6171 9.337 18.7179 9.07481 18.7157C8.81261 18.7134 8.5618 18.6082 8.37639 18.4228C8.19098 18.2374 8.08581 17.9866 8.08353 17.7244C8.08126 17.4622 8.18205 17.2096 8.36421 17.021L13.3142 12.071Z" fill="#050F27" />
+                        </svg>
+                    </a>
+                    <a href="researches.html" class="menu-crumbs-link">
+                        <p class="small-text">
+                            Анализ воды
+                        </p>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.3142 12.071L8.36421 7.12098C8.18205 6.93238 8.08126 6.67978 8.08353 6.41758C8.08581 6.15538 8.19098 5.90457 8.37639 5.71916C8.5618 5.53375 8.81261 5.42859 9.07481 5.42631C9.337 5.42403 9.58961 5.52482 9.77821 5.70698L15.4352 11.364C15.6227 11.5515 15.728 11.8058 15.728 12.071C15.728 12.3361 15.6227 12.5905 15.4352 12.778L9.77821 18.435C9.58961 18.6171 9.337 18.7179 9.07481 18.7157C8.81261 18.7134 8.5618 18.6082 8.37639 18.4228C8.19098 18.2374 8.08581 17.9866 8.08353 17.7244C8.08126 17.4622 8.18205 17.2096 8.36421 17.021L13.3142 12.071Z" fill="#050F27" />
+                        </svg>
+                    </a>
+                    <a href="researches-water-2.html" class="menu-crumbs-link">
+                        <p class="small-text">
+                            Комплексные анализы воды
+                        </p>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.3142 12.071L8.36421 7.12098C8.18205 6.93238 8.08126 6.67978 8.08353 6.41758C8.08581 6.15538 8.19098 5.90457 8.37639 5.71916C8.5618 5.53375 8.81261 5.42859 9.07481 5.42631C9.337 5.42403 9.58961 5.52482 9.77821 5.70698L15.4352 11.364C15.6227 11.5515 15.728 11.8058 15.728 12.071C15.728 12.3361 15.6227 12.5905 15.4352 12.778L9.77821 18.435C9.58961 18.6171 9.337 18.7179 9.07481 18.7157C8.81261 18.7134 8.5618 18.6082 8.37639 18.4228C8.19098 18.2374 8.08581 17.9866 8.08353 17.7244C8.08126 17.4622 8.18205 17.2096 8.36421 17.021L13.3142 12.071Z" fill="#050F27" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="researches__block__title-description">
+                    <div class="title__wrap">
+                        <p class="title">Комплексные анализы воды</p>
+                        <div class="title__wrap-line">
+        
+                        </div>
+                    </div>
+                    <p class="main-text left">
+                        Нашими специалистами были разработаны комплексные программы анализа воды 
+                        в зависимости от источника исследуемой воды
+                    </p>
+                </div>
+                <div class="researches__block__image-wrap">
+                    <img src="./assets/img/researches/waterMain-2.jpg" alt="анализ воды">
+                    <a href="#" class="main-button white arrow">
+                        <p>Каталог</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="block block--padding-top-none">
+        <div class="container">
+            <div class="title__wrap">
+                <p class="title">Типы анализов воды</p>
+                <div class="title__wrap-line">
+                </div>
+            </div>
+            <div class="researches__types__content">
+                <div class="researches__types__content__card">
+                    <img src="./assets/img/researches/researches_type_1.svg" class="researches__types__content__card-img">
+                    <div class="researches__types__content__card-text">
+                        <h2 class="h2 left">
+                            Комплексные анализы воды
+                        </h2>
+                        <p class="main-text left">
+                            Разработаны перечни исследований, которые включаются в комплекс под конкретную задачу
+                        </p>
+                        <a href="researches-water-3.html" class="transparent-button"><p class="main-text"><b>Подробнее</b></p></a>
+                    </div>
+                </div>
+                <div class="researches__types__content__card">
+                    <img src="./assets/img/researches/researches_type_2.svg" class="researches__types__content__card-img">
+                    <div class="researches__types__content__card-text">
+                        <h2 class="h2 left">
+                            Комплексные анализы воды
+                        </h2>
+                        <p class="main-text left">
+                            Разработаны перечни исследований, которые включаются в комплекс под конкретную задачу
+                        </p>
+                        <a href="#" class="transparent-button"> <p class="main-text"><b>Подробнее</b></p></a>
+                    </div>
+                </div>
+                <div class="researches__types__content__card blue">
+                    <img src="./assets/img/researches/researches_type_3.svg" class="researches__types__content__card-img">
+                    <div class="researches__types__content__card-text">
+                        <h2 class="h2 left">
+                            Комплексные анализы воды
+                        </h2>
+                        <p class="main-text left">
+                            Разработаны перечни исследований, которые включаются в комплекс под конкретную задачу
+                        </p>
+                        <a href="#" class="transparent-button"><p class="main-text"><b>Подробнее</b></p></a>
+                    </div>
+                </div>
+                <div class="researches__types__content__card blue">
+                    <img src="./assets/img/researches/researches_type_4.svg" class="researches__types__content__card-img">
+                    <div class="researches__types__content__card-text">
+                        <h2 class="h2 left">
+                            Комплексные анализы воды
+                        </h2>
+                        <p class="main-text left">
+                            Разработаны перечни исследований, которые включаются в комплекс под конкретную задачу
+                        </p>
+                        <a href="#" class="transparent-button"><p class="main-text"><b>Подробнее</b></p></a>
+                    </div>
+                </div>
+                <div class="researches__types__content__card">
+                    <img src="./assets/img/researches/researches_type_5.svg" class="researches__types__content__card-img">
+                    <div class="researches__types__content__card-text">
+                        <h2 class="h2 left">
+                            Комплексные анализы воды
+                        </h2>
+                        <p class="main-text left">
+                            Разработаны перечни исследований, которые включаются в комплекс под конкретную задачу
+                        </p>
+                        <a href="#" class="transparent-button"><p class="main-text"><b>Подробнее</b></p></a>
+                    </div>
+                </div>
+                <div class="researches__types__content__card">
+                    <img src="./assets/img/researches/researches_type_6.svg" class="researches__types__content__card-img">
+                    <div class="researches__types__content__card-text">
+                        <h2 class="h2 left">
+                            Комплексные анализы воды
+                        </h2>
+                        <p class="main-text left">
+                            Разработаны перечни исследований, которые включаются в комплекс под конкретную задачу
+                        </p>
+                        <a href="#" class="transparent-button"><p class="main-text"><b>Подробнее</b></p></a>
+                    </div>
+                </div>
+            </div>     
+        </div>
+    </section>
+
+    <section class="block block--padding-top-none">
+        <div class="container">
+            <div class="researches__sertificat__content">
+                <img src="./assets/img/researches/researches_sertificat_background.jpg" alt="лаборатория имеет национальный сертификат" class="researches__sertificat__content-img">
+                <a href="#" class="sertificat-arrow-button">
+                    <img src="./assets/img/arrowDark.svg" alt="кнопка">
+                </a>
+                <div class="sertificat-title-background">
+                    <div class="title__wrap padding-none">
+                        <p class="title">Лаборатория имеет сертификат национальной лаборатории</p>
+                        <div class="title__wrap-line">
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="block block--padding-top-none">
+        <div class="container">
+            <div class="title__wrap">
+                <p class="title">Каталог</p>
+                <div class="title__wrap-line">
+                </div>
+            </div>
+            <div class="researches-journal__content">
+                <form action="" class="researches-journal__search">
+                    <label class="researches-journal__search-input-wrap">
+                        <p class="small-text">Поиск ислледования</p>
+                        <input type="search" placeholder="Поиск" class="researches-journal__search-input">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.91029 13.8426C8.68934 13.8426 9.46076 13.6892 10.1805 13.3911C10.9003 13.0929 11.5542 12.656 12.1051 12.1051C12.656 11.5542 13.0929 10.9002 13.3911 10.1805C13.6892 9.46075 13.8426 8.68933 13.8426 7.91029C13.8426 7.13124 13.6892 6.35982 13.3911 5.64008C13.0929 4.92033 12.656 4.26636 12.1051 3.71549C11.5542 3.16462 10.9003 2.72765 10.1805 2.42952C9.46076 2.13139 8.68934 1.97794 7.91029 1.97794C6.33694 1.97794 4.82802 2.60296 3.71549 3.71549C2.60296 4.82802 1.97795 6.33693 1.97795 7.91029C1.97795 9.48364 2.60296 10.9926 3.71549 12.1051C4.82802 13.2176 6.33694 13.8426 7.91029 13.8426ZM14.159 12.761L17.6987 16.3006C17.793 16.3919 17.8683 16.501 17.92 16.6217C17.9717 16.7424 17.9989 16.8721 18 17.0034C18.001 17.1347 17.9759 17.2648 17.9261 17.3863C17.8763 17.5078 17.8028 17.6181 17.7099 17.7109C17.617 17.8037 17.5066 17.877 17.385 17.9266C17.2635 17.9763 17.1333 18.0012 17.002 18C16.8707 17.9987 16.741 17.9714 16.6204 17.9195C16.4998 17.8676 16.3908 17.7922 16.2996 17.6977L12.76 14.158C11.1706 15.3918 9.17071 15.9735 7.16752 15.7847C5.16432 15.5959 3.30838 14.6507 1.9775 13.1417C0.646626 11.6326 -0.0591376 9.67313 0.00388472 7.66204C0.0669071 5.65096 0.893978 3.73948 2.31673 2.31673C3.73948 0.893977 5.65096 0.066907 7.66205 0.00388471C9.67314 -0.0591376 11.6327 0.646625 13.1417 1.9775C14.6507 3.30838 15.5959 5.16432 15.7847 7.16751C15.9735 9.17071 15.3918 11.1706 14.158 12.76L14.159 12.761Z" fill="#050F27" />
+                          </svg>
+                    </label>
+
+                    <label class="researches-journal__search-input-wrap">
+                        <p class="small-text">Категория</p>
+                        <select name="" id="" class="researches-journal__search-input">
+                            <option value="0">Все</option>
+                            <option value="0">Комплексные анализы воды</option>
+                        </select>
+                    </label>
+                </form>
+
+                <table class="table ligh-blue">
+                    <thead>
+                        <tr>
+                            <th><h5 class="h5-b-120">№</h5> </th>
+                            <th><h5 class="h5-b-120">Наименование исследования <span class="transparent">.....................</span></h5></th>
+                            <th><h5 class="h5-b-120">Количество</h5></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> <p class="main-text">№ 1</p> </td>
+                            <td><p class="main-text left">Для садоводческих товариществ</p></td>
+                            <td>
+                                <form class="counts__buttons">
+                                    <button class="count minus-count"><p class="main-text"><b>-</b></p></button>
+                                    <div class="count-info"><p class="main-text"><b>1</b></p></div>
+                                    <button class="count plus-count"><p class="main-text"><b>+</b></p></button>
+                                </form>
+                            </td>
+                            <td><a href="#" class="transparent-button"><p class="main-text"><b>В корзину</b></p></a></td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <div id="clients" class="marquee">
+        <ul class="marquee-content">
+
+                <li><img src="./assets/img/partners/partner1.svg" alt=""></li>
+                <li><img src="./assets/img/partners/partner2.svg" alt=""></li>
+                <li><img src="./assets/img/partners/partner3.svg" alt=""></li>
+                <li><img src="./assets/img/partners/partner4.svg" alt=""></li>
+                <li><img src="./assets/img/partners/partner5.svg" alt=""></li>
+                <li><img src="./assets/img/partners/partner6.svg" alt=""></li>
+
+    
+
+        </ul>
+    </div>
+
+   <section id="consultation" class="block block--border-radius block--minus-margin ligh-blue block--padding-bottom">
+        <div class="container">
+            <div class="title__wrap center">
+                <p class="title">Остались вопросы?</p>
+                <div class="title__wrap-line">
+
+                </div>
+            </div>
+            <div class="ask-form__content">
+                <h class="h4">
+                    Оставьте заявку на <b>бесплатную</b> консультацию специалиста
+                </h>
+                <form action="" class="ask-form__content__form">
+                    <input type="text" class="ask-form__content__form-input" placeholder="Ваше имя">
+                    <input type="text" class="ask-form__content__form-input" placeholder="Ваш телефон">
+                    <button class="main-button arrow">
+                        <p>Получить консультцию</p>
+                    </button>
+                </form>
+                <p class="main-text left">
+                    Нажимая на кнопку, вы даёте согласие на обработку <a href="#">персональных данных </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="block block--border-radius dark unical-background block--minus-margin">
+        <img src="./assets/img/backroundVector.png" alt="фон" class="backround-vector">
+        <div class="container">
+            <div class="trust-block__content">
+                <div class="title__wrap center">
+                    <p class="title white">Нам доверяют</p>
+                    <div class="title__wrap-line">
+    
+                    </div>
+                </div>
+                <p class="main-text">
+                    Выбирайте Гео Палитра для надежных и точных исследований!
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="cart" class="cart">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A557da09633524c9f093f9a3e3828e310f415e254e2123c52c12c1ed32248ef5a&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+        <div class="cart__circle"><p class="main-text"><b>
+            г. Дзержинск, ул. Клюквина, д. 4А, помещение 2
+        </b></p></div>
+    </section>
+
+
+
+    <section class="block block-footer block--border-radius dark block--minus-margin">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__left-side">
+                    <div class="title__wrap">
+                        <img src="./assets/img/bigLogo.png" alt="">
+                        <div class="title__wrap-line line-logo">
+        
+                        </div>
+                    </div>
+                    <p class="main-text">
+                        Инженерные изыскания и проектирование 
+                        для комплексного решения ваших задач
+                    </p>
+                    <div class="footer__content-contacts">
+                        <p class="small-text">geopalitra@gmail.com</p>
+                        <p class="small-text">тел. (831) 211-33-35</p>
+                    </div>
+                </div>
+<div class="footer__right-side">
+    <div class="footer__menu__column">
+        <h5 class="h5-b-120">
+            Услуги
+        </h5>
+            <a href="">
+                <p class="small-text">
+                    Грунты
+                </p>
+            </a>
+            <a href="">
+                <p class="small-text">
+                    Территория
+                </p>
+            </a>
+            <a href="">
+                <p class="small-text">
+                    Помещения
+                </p>
+            </a>
+            <a href="">
+                <p class="small-text">
+                    Вода
+                </p>
+            </a>
+            <a href="">
+                <p class="small-text">
+                    Почва
+                </p>
+            </a>
+            <a href="">
+                <p class="small-text">
+                    Воздух
+                </p>
+            </a>
+            <a href="">
+                <p class="small-text">
+                    Донные отложения
+                </p>
+            </a>
+            <a href="">
+                <p class="small-text">
+                    Отходы
+                </p>
+            </a>
+            <a href="">
+                <p class="small-text">
+                    Конструкции строительные
+                </p>
+            </a>
+            <a href="">
+                <p class="small-text">
+                    Грунты
+                </p>
+            </a>
+    </div>
+    <div class="footer__menu__column">
+        <h5 class="h5-b-120">
+            Компания
+        </h5>
+            <a href="#about">
+                <p class="small-text">
+                    О компании
+                </p>
+            </a>
+            <a data-fancybox href="#hidden">
+                <p class="small-text">
+                    Аккредитация
+                </p>
+            </a>
+            <a href="#researches">
+                <p class="small-text">
+                    Исследования
+                </p>
+            </a>
+            <a href="#why">
+                <p class="small-text">
+                    Почему мы
+                </p>
+            </a>
+            <a href="#steps">
+                <p class="small-text">
+                    Этапы испытаний
+                </p>
+            </a>
+            <a href="#cart">
+                <p class="small-text">
+                    Где нас найти
+                </p>
+            </a>
+            <a href="#consultation">
+                <p class="small-text">
+                    Консультация
+                </p>
+            </a>
+    
+    </div>
+</div>
+            </div>
+            <div class="footer__bottom">
+                <p class="small-text">© 2024 АО «Гео палитра»</p>
+                <p class="small-text">Политика конфиденциальности</p>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
