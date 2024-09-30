@@ -1036,6 +1036,10 @@ padding: 16px 0;
 
 @media (max-width:440px) {
 
+    .researches__block__title-description .main-text{
+        font-size: 14px;
+    }
+
     .vector-decor{
         width: 93px;
         height: 93px;
