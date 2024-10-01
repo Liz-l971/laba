@@ -723,6 +723,18 @@ outline:var(--dark-blue);
         content: url(../img/smallArrow1200.svg);
         height: 15px;
     }
+
+    /*
+    inputs
+    */
+    .custom-radio+label::before{
+        width: 11px;
+        height: 11px;
+        
+    }
+    .custom-radio:checked+label::before {
+        box-shadow: inset 0 0 0 2px white;
+    }
     /*
         blocks
     */
@@ -1009,6 +1021,18 @@ padding: 16px 0;
     }
     .block.block--padding-top-none {
         padding: 0px 0 40px 0;
+    }
+
+        /*
+    inputs
+    */
+    .custom-radio+label::before{
+        width: 7px;
+        height: 7px;
+        
+    }
+    .custom-radio:checked+label::before {
+        box-shadow: inset 0 0 0 1.5px white;
     }
     /*
         Модальные окна

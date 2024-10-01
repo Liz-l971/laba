@@ -138,3 +138,133 @@ top: 21.8%;
 	height: 0;
 }
  
+
+
+
+@media (max-width:1200px){
+
+    
+    .order__content__form {
+        gap: 20px;
+        width: 61.75%;
+    }
+
+    .make__order__inputs__content {
+        column-gap: 40px;
+        row-gap: 10px;
+    }
+    
+    .make__order__inputs__content.fiz{
+        gap: 15px;
+    
+    }
+
+    .make__order-input {
+        border-radius: 10px;
+    padding: 0 10px;
+    height: 38px;
+    font-size: 12px;
+    }
+    
+    
+    
+    
+    
+    .make__order__select--button {
+    border-radius: 30px;
+    padding: 3.5px 8.5px;
+    width: 110px;
+    }
+    
+    .make__order__select--button .small-text{
+        width: 80px;
+    }
+    .make__order__select--button svg{
+        width: 9px;
+        height: 5px;
+    }
+    .make__order__select--button.open svg{
+        transform: rotate(180deg);
+    }
+    
+    .make__order__select--list 
+    {
+
+        border-radius: 5px;
+    width: 156px;
+    top: 21.8%;
+    }
+    .radio {
+        width: 100%;
+        padding: 9px 10px;
+    }
+
+
+     
+    
+}
+
+
+
+@media (max-width:640px){
+
+    
+    .order__content__form {
+        gap: 10px;
+        width: 59.32%;
+    }
+
+    .make__order__inputs__content {
+        column-gap: 6px;
+        row-gap: 6px;
+    }
+    
+    .make__order__inputs__content.fiz{
+        gap: 6px;
+    
+    }
+
+    .make__order-input {
+        border-radius: 6px;
+    padding: 0 6px;
+    height: 25px;
+    font-size: 9px;
+    }
+    
+    
+    
+    
+    
+    .make__order__select--button {
+    border-radius: 30px;
+    padding: 1.5px 7.5px;
+    width: 75px;
+    }
+    
+    .make__order__select--button .small-text{
+        width: 57px;
+    }
+    .make__order__select--button svg{
+        width: 5px;
+        height: 3px;
+    }
+    .make__order__select--button.open svg{
+        transform: rotate(180deg);
+    }
+    
+    .make__order__select--list 
+    {
+
+        border-radius: 5px;
+    width: 105px;
+    top: 21.8%;
+    }
+    .radio {
+        width: 100%;
+        padding: 7px 5px;
+    }
+
+
+     
+    
+}

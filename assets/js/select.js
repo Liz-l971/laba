@@ -14,12 +14,9 @@ function openSelect(){
 
 
     button.querySelector(".small-text").textContent = checkedValues.length > 0 ? checkedValues : 'Покупатель';
-    console.log(checkedValues)
-
     if(checkedValues=='Физическое лицо'){
         document.querySelector(".make__order__inputs__content").classList.add("fiz")
     }else{
         document.querySelector(".make__order__inputs__content").classList.remove("fiz")
     }
-    // checkedValues = 'Физическое лицо' ? document.querySelector(".make__order__inputs__content").classList.add("fiz") : document.querySelector(".make__order__inputs__content").classList.remove("fiz")
 }
