@@ -6,6 +6,7 @@
 }
 
 .order__content__form {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -78,6 +79,7 @@ cursor: pointer;
     overflow: hidden;
     box-shadow: 11px 13px 10px 0 rgba(0, 0, 0, 0.05);
 width: 248px;
+top: 21.8%;
 }
 
 .make__order__select--list.open {
