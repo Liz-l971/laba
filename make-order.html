@@ -12,13 +12,9 @@
     <link rel="stylesheet" href="assets/css/components/slider.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/basket.css">
-    <script src="./assets/js/slider.js" defer></script>
-    <script src="./assets/js/mainSlider.js" defer></script>
+    <link rel="stylesheet" href="assets/css/make-order.css">
     <script src="./assets/js/modal.js" defer></script>
-    <script src="./assets/js/loadImage.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-    <link rel="stylesheet" href="./assets/css/libs/fancy-bax.css">
+    <script src="./assets/js/select.js" defer></script>
     <title>Document</title>
 </head>
 
@@ -187,7 +183,7 @@
         </div>
     </header>
 
-    <section class="block block--overflow-none block--big-padding-top">
+    <section class="block block--overflow-none block--big-padding-top block--padding-bottom">
         <div class="container">
             <div class="researches__block-top-content">
                 <div class="menu-crumbs">
@@ -210,134 +206,68 @@
                 </div>
                 <div class="researches__block__title-description">
                     <div class="title__wrap">
-                        <p class="title">В корзине 3 товара</p>
+                        <p class="title">Оформления заказа</p>
                         <div class="title__wrap-line">
         
                         </div>
                     </div>
                 </div>
 
-                <div class="basket__content">
-                    <div class="basket__content__table">
-                        <p class="main-text left">Товары в корзине</p>
-                        <table class="table ligh-blue">
-                            <thead>
-                                <tr>
-                                    <th><p class="medium-text">№</p> </th>
-                                    <th><p class="medium-text desktop-title">Наименование исследования</p> <p class="medium-text mobile-title">Исследование</p></th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td> <p class="main-text">№ 1</p> </td>
-                                    <td><p class="main-text left">Для садоводческих товариществ</p></td>
-                                    <td>
-                                        <button class="modal-close__button">
-                                            <img src="./assets/img/closeModal.svg" alt="закрыть" class="close-icon">
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td> <p class="main-text">№ 1</p> </td>
-                                    <td><p class="main-text left">Для садоводческих товариществ</p></td>
-                                    <td>
-                                        <button class="modal-close__button">
-                                            <img src="./assets/img/closeModal.svg" alt="закрыть" class="close-icon">
-                                        </button>
-                                    </td>
-                                </tr>     <tr>
-                                    <td> <p class="main-text">№ 1</p> </td>
-                                    <td><p class="main-text left">Для садоводческих товариществ</p></td>
-                                    <td>
-                                        <button class="modal-close__button">
-                                            <img src="./assets/img/closeModal.svg" alt="закрыть" class="close-icon">
-                                        </button>
-                                    </td>
-                                </tr>     <tr>
-                                    <td> <p class="main-text">№ 1</p> </td>
-                                    <td><p class="main-text left">Для садоводческих товариществ</p></td>
-                                    <td>
-                                        <button class="modal-close__button">
-                                            <img src="./assets/img/closeModal.svg" alt="закрыть" class="close-icon">
-                                        </button>
-                                    </td>
-                                </tr>    
-                                <tr>
-                                    <td> <p class="main-text">№ 1</p> </td>
-                                    <td><p class="main-text left">Для садоводческих товариществ</p></td>
-                                    <td>
-                                        <button class="modal-close__button">
-                                            <img src="./assets/img/closeModal.svg" alt="закрыть" class="close-icon">
-                                        </button>
-                                    </td>
-                                </tr>
+                <form class="order__content">
+                    <div class="order__content__form">
+                            <p class="main-text left">Укажите тип покупателя:</p>
+                            <div class="make__order__select--button" onclick="openSelect()">
+                                <p class="small-text">Покупатель</p>
+                                <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 0.25L7.5 7.75L0 0.25L15 0.25Z" fill="#050F27" />
+                                  </svg>
+                            </div>
+                            <div class="make__order__select--list">
+                                <div class="radio">
+                                    <input class="custom-radio" type="radio" id="type-1" name="type" value="Юридическое лицо">
+                                    <label for="type-1"> <p class="small-text">Юридическое лицо</p> </label>
+                                  </div>
+                                  <div class="radio">
+                                    <input class="custom-radio" type="radio" id="type-2" name="type" value="Физическое лицо">
+                                    <label for="type-2"><p class="small-text">Физическое лицо</p></label>
+                                  </div>
+                                
+                            </div>
 
-                                <tr>
-                                    <td> <p class="main-text">№ 1</p> </td>
-                                    <td><p class="main-text left">Для садоводческих товариществ</p></td>
-                                    <td>
-                                        <button class="modal-close__button">
-                                            <img src="./assets/img/closeModal.svg" alt="закрыть" class="close-icon">
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td> <p class="main-text">№ 1</p> </td>
-                                    <td><p class="main-text left">Для садоводческих товариществ</p></td>
-                                    <td>
-                                        <button class="modal-close__button">
-                                            <img src="./assets/img/closeModal.svg" alt="закрыть" class="close-icon">
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td> <p class="main-text">№ 1</p> </td>
-                                    <td><p class="main-text left">Для садоводческих товариществ</p></td>
-                                    <td>
-                                        <button class="modal-close__button">
-                                            <img src="./assets/img/closeModal.svg" alt="закрыть" class="close-icon">
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td> <p class="main-text">№ 1</p> </td>
-                                    <td><p class="main-text left">Для садоводческих товариществ</p></td>
-                                    <td>
-                                        <button class="modal-close__button">
-                                            <img src="./assets/img/closeModal.svg" alt="закрыть" class="close-icon">
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td> <p class="main-text">№ 1</p> </td>
-                                    <td><p class="main-text left">Для садоводческих товариществ</p></td>
-                                    <td>
-                                        <button class="modal-close__button">
-                                            <img src="./assets/img/closeModal.svg" alt="закрыть" class="close-icon">
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td> <p class="main-text">№ 1</p> </td>
-                                    <td><p class="main-text left">Для садоводческих товариществ</p></td>
-                                    <td>
-                                        <button class="modal-close__button">
-                                            <img src="./assets/img/closeModal.svg" alt="закрыть" class="close-icon">
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td> <p class="main-text">№ 1</p> </td>
-                                    <td><p class="main-text left">Для садоводческих товариществ</p></td>
-                                    <td>
-                                        <button class="modal-close__button">
-                                            <img src="./assets/img/closeModal.svg" alt="закрыть" class="close-icon">
-                                        </button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                            <div class="make__order__inputs__content">
+                                <div class="make__order__inputs__content__lables">
+                                    <p class="small-text">ФИО</p>
+                                    <input type="text" class="make__order-input" placeholder="Иванов Иван Иванович">
+                                </div>
+
+                                <div class="make__order__inputs__content__lables">
+                                    <p class="small-text">Контактный номер</p>
+                                    <input type="text" class="make__order-input" placeholder="8 (999) 999 99 99">
+                                </div>
+
+                                <div class="make__order__inputs__content__lables">
+                                    <p class="small-text">Почта</p>
+                                    <input type="text" class="make__order-input" placeholder="testgeopalitra@gmail.com">
+                                </div>
+
+                                <div class="make__order__inputs__content__lables">
+                                    <p class="small-text">Наименование организации</p>
+                                    <input type="text" class="make__order-input" placeholder="АО Гео Палитра">
+                                </div>
+
+                                <div class="make__order__inputs__content__lables">
+                                    <p class="small-text">ИНН</p>
+                                    <input type="text" class="make__order-input" placeholder="000000000000">
+                                </div>
+                                
+                            </div>
+
+                            <label class="input-file">
+                                <input type="file" name="file">		
+                                <span><p class="main-text">🔗 Прикрепить файл</p></span>
+                          </label>
+
+
                     </div>
 
                     <div class="basket__content__order-info">
@@ -346,16 +276,22 @@
                             <p class="main-text">Товары</p>
                             <p class="main-text">(3 шт.)</p>
                         </div>
-                        <a href="make-order.html" class="main-button small-border-radius"><p>Оформить заказ</p></a>
+                        <button type="submit" class="main-button small-border-radius"><p>Оформить заказ</p></button>
                         <p class="small-text">Выбрать статус покупателя (юр.лицо или физ.лицо) можно выбрать при оформлении заказа</p>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </section>
 
 
-
+    <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+    $('.input-file input[type=file]').on('change', function(){
+        let file = this.files[0];
+        $(this).next().html(`<p class="main-text">🔗 ${file.name}</p>`);
+    });
+    </script>
 
     <section class="block block-footer block--border-radius dark block--minus-margin">
         <div class="container">
