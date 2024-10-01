@@ -23,6 +23,23 @@
     column-gap: 30px;
     row-gap: 15px;
 }
+
+.make__order__inputs__content.fiz{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+
+.make__order__inputs__content.fiz .make__order__inputs__content__lables:nth-child(2){
+    display: none;
+}
+
+.make__order__inputs__content.fiz .make__order__inputs__content__lables:nth-child(4){
+    display: none;
+}
+
 .make__order__inputs__content__lables {
     display: flex;
     flex-direction: column;
