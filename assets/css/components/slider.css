@@ -14,6 +14,15 @@
   color: #eee;
   overflow: hidden;
   position: relative;
+  opacity: 0%;
+  transform: translateX(20%);
+  transition: all 0.8s ease 0.2s;
+  
+}
+
+.marquee._active{
+  opacity: 100%;
+  transform: translateX(0%);
 }
 
 
@@ -23,7 +32,10 @@
   display: flex;
   animation: scrolling var(--marquee-animation-duration) linear infinite;
   gap: 90px;
+
 }
+
+
 
 @keyframes scrolling {
   0% { transform: translateX(0); }
