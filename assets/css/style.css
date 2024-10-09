@@ -24,7 +24,17 @@
     justify-content: center;
     gap: 40px;
     height: 100vh;
+    transform: translateY(50%);
+    opacity: 0%;
+    transition: all 0.8s ease 0.2s;
 }
+
+.banner__content._active{
+    transform: translateY(0);
+    opacity: 100%;
+} 
+
+
 
 .banner__content-text {
     color: #fff;
@@ -54,6 +64,7 @@
     position: relative;
     color: #050F27;
 
+
 }
 
 
@@ -66,6 +77,7 @@
     position: absolute;
     right: 70px;
     top: 59px;
+    z-index: 10;
 }
 
 .clients-info-text {
@@ -75,6 +87,7 @@
     line-height: 50.33px;
     text-align: left;
     /* border: 1px solid black; */
+
 }
 
 
@@ -82,9 +95,16 @@
     border-radius: 2.5rem;
     object-fit: cover;
     height: -webkit-fill-available;
+    opacity: 0%;
+    transform: scale(0.7);
+    transition: all 0.8s ease 0.2s;
 
 }
 
+.block-about_us__content-img._active{
+    opacity: 100%;
+    transform: scale(1);
+}
 .block-about_us__content-info {
     height: 850px;
     background: #E8F6FE;
@@ -96,15 +116,46 @@
     gap: 37px;
     text-align: left;
     padding: 192px 90px;
+    opacity: 0%;
+    transform: scale(0.7);
+    transition: all 0.8s ease 0.2s;
+}
+
+.block-about_us__content-info._active{
+    opacity: 100%;
+    transform: scale(1);
 }
 
 .block-about_us__content-info p {
     text-align: left;
 }
 
+.about-vector-decor{
+    opacity: 0%;
+    transform: rotate(120deg);
+    transform: scale(0.1);
+    transition: all 0.8s ease 1s;
+}
+.about-vector-decor._active{
+    opacity: 100%;
+    transform: scale(1);
+    transform: rotate(0deg);
+}
+
 /*
     researches
 */
+
+.block-researches{
+    transform: translateY(50%);
+    opacity: 0%;
+    transition: all 0.8s ease 0.2s;
+}
+
+.block-researches._active{
+    transform: translateY(0);
+    opacity: 100%;
+}
 
 .researches__list{
     display: flex;
@@ -249,6 +300,20 @@ color: #050f27;
     advantages
 **/
 
+.block-advantages{
+    visibility: hidden;
+
+    transform: translateY(-100%);
+    transition: all 0.8s ease 0.8s;
+    z-index: -2;
+
+}
+
+.advantages__container._active .block-advantages{
+    visibility: visible;
+    transform: translateY(0);
+}
+
 .block-advantages .vector-decor.advatage-vector-1 {
     left: -91px;
     top: 12%;
@@ -278,6 +343,14 @@ color: #050f27;
     width: 74%;
     align-items: center;
     justify-content: center;
+    transition: all 0.8s ease 0.2s;
+
+    transform: scale(1.2);
+
+}
+
+.advantages__content._active{
+    transform: scale(1);
 }
 
 .advantages__content__card {
@@ -600,12 +673,23 @@ color: #050f27;
 slider compleks
 
 */
+
+
 .slider__wrap {
     position: relative;
     width: 91.5%;
     overflow: hidden;
     height: 250px;
     margin-left: 8.1%;
+    
+    opacity: 0%;
+    transform: translateX(20%);
+    transition: all 0.8s ease 0.2s;
+}
+
+.slider__wrap._active{
+    opacity: 100%;
+    transform: translateX(0);
 }
 
 .slider__cards__content {
@@ -648,6 +732,14 @@ slider compleks
     justify-content: flex-end;
     align-items: center;
     gap: 9%;
+    opacity: 0%;
+    transform: translateX(20%);
+    transition: all 0.8s ease 0.2s;
+}
+
+.top__slider__content._active{
+    opacity: 100%;
+    transform: translateX(0);
 }
 
 .top__slider__content .title__wrap {

@@ -71,7 +71,6 @@
     border-radius: 20px;
     background: var(--light-blue);
     display: flex;
-    height: fit-content;
 }
 
 .researches__types__content__card.blue{
@@ -226,7 +225,7 @@ select {
   
   select:not([multiple]) {
     background-repeat: no-repeat;
-    background-position: 148px 30px;
+    background-position: 86% 30px;
     background-size: 0.85em auto;
     background-image: url("../img/researches/select.svg");
   }

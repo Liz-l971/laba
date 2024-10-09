@@ -89,16 +89,21 @@ color: #fff;
 .burger-menu-icon{
     cursor: pointer;
 }
-.burger-menu-icon svg{
+.burger-menu-icon svg path{
+    transition: all ease-in-out 0.3s;
+
+}
+
+.burger-menu-icon svg rect{
     transition: all ease-in-out 0.3s;
 
 }
 .burger-menu-icon svg:hover path{
-fill: #0676B3;
+fill: #fff;
 }
 
 .burger-menu-icon svg:hover rect{
-    fill: #fff;
+    fill: var(--blue);
     }
 .header__content__menu-logo {
 }

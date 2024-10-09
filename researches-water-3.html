@@ -15,6 +15,7 @@
     <script src="./assets/js/mainSlider.js" defer></script>
     <script src="./assets/js/modal.js" defer></script>
     <script src="./assets/js/loadImage.js" defer></script>
+    <script src="./assets/js/basketCount.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <link rel="stylesheet" href="./assets/css/libs/fancy-bax.css">
@@ -104,7 +105,7 @@
                         </div>
 
     
-                        <button type="submit"  class="main-button modal__form-button"><p>Войти</p></button>
+                        <a href="profile.html" class="main-button modal__form-button"><p>Войти</p></a>
     
                     </form>
                     <div class="modal__help-txt">
@@ -129,12 +130,11 @@
                 <nav class="header__content__menu">
                     <div class="header__content__menu-burger__wrap">
                         <div class="burger-menu-icon" onclick="openBurger()">
-                            <svg  width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"
-                            class="header__content__menu-burger">
-                            <rect width="40" height="40" rx="20" fill="#0676B3" />
-                            <path
-                                d="M13.5714 12.5H18.9286C19.2127 12.5 19.4853 12.658 19.6862 12.9393C19.8871 13.2206 20 13.6022 20 14C20 14.3978 19.8871 14.7794 19.6862 15.0607C19.4853 15.342 19.2127 15.5 18.9286 15.5H13.5714C13.2873 15.5 13.0147 15.342 12.8138 15.0607C12.6129 14.7794 12.5 14.3978 12.5 14C12.5 13.6022 12.6129 13.2206 12.8138 12.9393C13.0147 12.658 13.2873 12.5 13.5714 12.5ZM21.0714 24.5H26.4286C26.7127 24.5 26.9853 24.658 27.1862 24.9393C27.3871 25.2206 27.5 25.6022 27.5 26C27.5 26.3978 27.3871 26.7794 27.1862 27.0607C26.9853 27.342 26.7127 27.5 26.4286 27.5H21.0714C20.7873 27.5 20.5147 27.342 20.3138 27.0607C20.1129 26.7794 20 26.3978 20 26C20 25.6022 20.1129 25.2206 20.3138 24.9393C20.5147 24.658 20.7873 24.5 21.0714 24.5ZM13.5714 18.5H26.4286C26.7127 18.5 26.9853 18.658 27.1862 18.9393C27.3871 19.2206 27.5 19.6022 27.5 20C27.5 20.3978 27.3871 20.7794 27.1862 21.0607C26.9853 21.342 26.7127 21.5 26.4286 21.5H13.5714C13.2873 21.5 13.0147 21.342 12.8138 21.0607C12.6129 20.7794 12.5 20.3978 12.5 20C12.5 19.6022 12.6129 19.2206 12.8138 18.9393C13.0147 18.658 13.2873 18.5 13.5714 18.5Z"
-                                fill="white" />
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" fill="white" />
+                                <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="#0676B3" />
+                                <path d="M13.5714 12.5H18.9286C19.2127 12.5 19.4853 12.658 19.6862 12.9393C19.8871 13.2206 20 13.6022 20 14C20 14.3978 19.8871 14.7794 19.6862 15.0607C19.4853 15.342 19.2127 15.5 18.9286 15.5H13.5714C13.2873 15.5 13.0147 15.342 12.8138 15.0607C12.6129 14.7794 12.5 14.3978 12.5 14C12.5 13.6022 12.6129 13.2206 12.8138 12.9393C13.0147 12.658 13.2873 12.5 13.5714 12.5ZM21.0714 24.5H26.4286C26.7127 24.5 26.9853 24.658 27.1862 24.9393C27.3871 25.2206 27.5 25.6022 27.5 26C27.5 26.3978 27.3871 26.7794 27.1862 27.0607C26.9853 27.342 26.7127 27.5 26.4286 27.5H21.0714C20.7873 27.5 20.5147 27.342 20.3138 27.0607C20.1129 26.7794 20 26.3978 20 26C20 25.6022 20.1129 25.2206 20.3138 24.9393C20.5147 24.658 20.7873 24.5 21.0714 24.5ZM13.5714 18.5H26.4286C26.7127 18.5 26.9853 18.658 27.1862 18.9393C27.3871 19.2206 27.5 19.6022 27.5 20C27.5 20.3978 27.3871 20.7794 27.1862 21.0607C26.9853 21.342 26.7127 21.5 26.4286 21.5H13.5714C13.2873 21.5 13.0147 21.342 12.8138 21.0607C12.6129 20.7794 12.5 20.3978 12.5 20C12.5 19.6022 12.6129 19.2206 12.8138 18.9393C13.0147 18.658 13.2873 18.5 13.5714 18.5Z" fill="#0676B3" />
+                              </svg>
                         
 
                     </svg>
@@ -190,7 +190,7 @@
         <div class="container">
             <div class="researches__block-top-content">
                 <div class="menu-crumbs">
-                    <a href="#" class="menu-crumbs-link">
+                    <a href="index.html" class="menu-crumbs-link">
                         <p class="small-text">
                             Главная
                         </p>
@@ -246,7 +246,7 @@
                 </div>
                 <div class="researches__block__image-wrap">
                     <img src="./assets/img/researches/waterMain-2.jpg" alt="анализ воды">
-                    <a href="#" class="main-button white arrow">
+                    <a href="#journal" class="main-button white arrow">
                         <p>Каталог</p>
                     </a>
                 </div>
@@ -316,11 +316,11 @@
                 <div class="title__wrap-line">
                 </div>
             </div>
-            <div class="researches-journal__content">
+            <div class="researches-journal__content" id="journal">
                 <form action="" class="researches-journal__search">
                     <label class="researches-journal__search-input-wrap">
                         <p class="small-text">Поиск ислледования</p>
-                        <input type="search" placeholder="Поиск" class="researches-journal__search-input">
+                        <input type="text" placeholder="Поиск" class="researches-journal__search-input">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.91029 13.8426C8.68934 13.8426 9.46076 13.6892 10.1805 13.3911C10.9003 13.0929 11.5542 12.656 12.1051 12.1051C12.656 11.5542 13.0929 10.9002 13.3911 10.1805C13.6892 9.46075 13.8426 8.68933 13.8426 7.91029C13.8426 7.13124 13.6892 6.35982 13.3911 5.64008C13.0929 4.92033 12.656 4.26636 12.1051 3.71549C11.5542 3.16462 10.9003 2.72765 10.1805 2.42952C9.46076 2.13139 8.68934 1.97794 7.91029 1.97794C6.33694 1.97794 4.82802 2.60296 3.71549 3.71549C2.60296 4.82802 1.97795 6.33693 1.97795 7.91029C1.97795 9.48364 2.60296 10.9926 3.71549 12.1051C4.82802 13.2176 6.33694 13.8426 7.91029 13.8426ZM14.159 12.761L17.6987 16.3006C17.793 16.3919 17.8683 16.501 17.92 16.6217C17.9717 16.7424 17.9989 16.8721 18 17.0034C18.001 17.1347 17.9759 17.2648 17.9261 17.3863C17.8763 17.5078 17.8028 17.6181 17.7099 17.7109C17.617 17.8037 17.5066 17.877 17.385 17.9266C17.2635 17.9763 17.1333 18.0012 17.002 18C16.8707 17.9987 16.741 17.9714 16.6204 17.9195C16.4998 17.8676 16.3908 17.7922 16.2996 17.6977L12.76 14.158C11.1706 15.3918 9.17071 15.9735 7.16752 15.7847C5.16432 15.5959 3.30838 14.6507 1.9775 13.1417C0.646626 11.6326 -0.0591376 9.67313 0.00388472 7.66204C0.0669071 5.65096 0.893978 3.73948 2.31673 2.31673C3.73948 0.893977 5.65096 0.066907 7.66205 0.00388471C9.67314 -0.0591376 11.6327 0.646625 13.1417 1.9775C14.6507 3.30838 15.5959 5.16432 15.7847 7.16751C15.9735 9.17071 15.3918 11.1706 14.158 12.76L14.159 12.761Z" fill="#050F27" />
                           </svg>
@@ -338,9 +338,9 @@
                 <table class="table ligh-blue">
                     <thead>
                         <tr>
-                            <th><h5 class="h5-b-120">№</h5> </th>
-                            <th><h5 class="h5-b-120">Наименование исследования <span class="transparent">.....................</span></h5></th>
-                            <th><h5 class="h5-b-120">Количество</h5></th>
+                            <th><h5 class="h5-b-120 desktop-title">№</h5> </th>
+                            <th><h5 class="h5-b-120 desktop-title">Наименование исследования</h5> <h5 class="h5-b-120 mobile-title">Исследование</h5></th>
+                            <th><h5 class="h5-b-120 desktop-title">Количество</h5><h5 class="h5-b-120 mobile-title">Кол-во</h5></th>
                             <th></th>
                         </tr>
                     </thead>
@@ -349,11 +349,47 @@
                             <td> <p class="main-text">№ 1</p> </td>
                             <td><p class="main-text left">Для садоводческих товариществ</p></td>
                             <td>
-                                <form class="counts__buttons">
-                                    <button class="count minus-count"><p class="main-text"><b>-</b></p></button>
-                                    <div class="count-info"><p class="main-text"><b>1</b></p></div>
-                                    <button class="count plus-count"><p class="main-text"><b>+</b></p></button>
-                                </form>
+                                <div class="counts__buttons">
+                                    <button class="count minus-count" onclick="basketMinus(0)"><p class="main-text"><b>-</b></p></button>
+                                    <div class="count-info"><p class="main-text"><b class="basket-count-text">1</b></p></div>
+                                    <button class="count plus-count" onclick="basketPlus(0)"><p class="main-text"><b>+</b></p></button>
+                                </div>
+                            </td>
+                            <td><a href="#" class="transparent-button"><p class="main-text"><b>В корзину</b></p></a></td>
+                        </tr>
+                        <tr>
+                            <td> <p class="main-text">№ 1</p> </td>
+                            <td><p class="main-text left">Для садоводческих товариществ</p></td>
+                            <td>
+                                <div class="counts__buttons">
+                                    <button class="count minus-count" onclick="basketMinus(1)"><p class="main-text"><b>-</b></p></button>
+                                    <div class="count-info"><p class="main-text"><b class="basket-count-text">1</b></p></div>
+                                    <button class="count plus-count" onclick="basketPlus(1)"><p class="main-text"><b>+</b></p></button>
+                                </div>
+                            </td>
+                            <td><a href="#" class="transparent-button"><p class="main-text"><b>В корзину</b></p></a></td>
+                        </tr>
+                        <tr>
+                            <td> <p class="main-text">№ 1</p> </td>
+                            <td><p class="main-text left">Для садоводческих товариществ</p></td>
+                            <td>
+                                <div class="counts__buttons">
+                                    <button class="count minus-count" onclick="basketMinus(2)"><p class="main-text"><b>-</b></p></button>
+                                    <div class="count-info"><p class="main-text"><b class="basket-count-text">1</b></p></div>
+                                    <button class="count plus-count" onclick="basketPlus(2)"><p class="main-text"><b>+</b></p></button>
+                                </div>
+                            </td>
+                            <td><a href="#" class="transparent-button"><p class="main-text"><b>В корзину</b></p></a></td>
+                        </tr>
+                        <tr>
+                            <td> <p class="main-text">№ 1</p> </td>
+                            <td><p class="main-text left">Для садоводческих товариществ</p></td>
+                            <td>
+                                <div class="counts__buttons">
+                                    <button class="count minus-count" onclick="basketMinus(3)"><p class="main-text"><b>-</b></p></button>
+                                    <div class="count-info"><p class="main-text"><b class="basket-count-text">1</b></p></div>
+                                    <button class="count plus-count" onclick="basketPlus(3)"><p class="main-text"><b>+</b></p></button>
+                                </div>
                             </td>
                             <td><a href="#" class="transparent-button"><p class="main-text"><b>В корзину</b></p></a></td>
                         </tr>

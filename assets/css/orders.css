@@ -1,0 +1,139 @@
+.orders__main__content__block{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.researches-journal__search.orders__filter__search{
+    background: #fff;
+
+}
+
+
+.researches-journal__search.orders__filter__search input{
+    background: #f2f4f8;
+
+}
+
+.orders__input-filter-wraps{
+    display: flex;
+    gap: 30px;
+}
+
+.orders__input-filter-wrap {
+    position: relative;
+}
+.orders__input-filter-wrap  .make__order__select--list {
+    top: auto;
+}
+.radio {
+}
+.custom-radio {
+}
+
+.orders__list {
+    border-radius: 20px;
+    border: 1px solid #07141a27;
+    overflow: hidden;
+    background-color: #fff;
+    width: 100%;
+}
+.orders__list__top {
+    background: #F2F4F8;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-between;
+    padding:  14px 0;
+    border-bottom: 1px solid #07141a27;
+    width: 100%;
+}
+.orders__list__top p{
+    color: var(--dark-blue);
+}
+
+.order__list__items {    
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border-bottom: 1px solid #07141a27;
+
+    
+}
+.order__list__items p{
+    color: var(--dark-blue);
+
+}
+.order__list__items-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.order__list__items-item:nth-child(4){
+    justify-content: space-between;
+    padding: 11px 16px 11px 0;
+}
+.order__list__items-item.order__status__column{
+    padding: 0;
+    padding-left: 50px;
+}
+.status__wrap {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 0.62rem;
+    padding: 0.62rem 1.25rem;
+
+}
+.status__wrap p{
+    white-space: nowrap;
+}
+.status__wrap.yellow {
+    background: #ffc250;
+}
+.status__wrap.green {
+    background: #41bc40;
+}
+.status__wrap.blue {
+    background: var(--blue);
+}
+.status__wrap.blue p{
+    color: #fff;
+}
+.order__menu__info{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.order__list__items-item-status{
+    width: 217px;
+    display: flex;
+    justify-content: center;
+}
+.order__suggests {
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+    position: relative;
+    padding: 1rem 0.75rem;
+width: 2.62rem;
+height: 3rem;
+}
+.order__suggests-badge {
+    position: absolute;
+    border-radius: 0.75rem;
+padding: 0.07rem 0.31rem;
+width: 1.06rem;
+height: 1.12rem;
+background:var(--dark-blue) ;
+top: 8px;
+right: 1px;
+}
+.order__suggests-badge p{
+    color: #fff;
+}
+.order__settings {
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+

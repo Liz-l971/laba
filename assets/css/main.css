@@ -364,12 +364,15 @@ padding: 17px 0;
 .table tbody tr:last-child td:first-child {
 	border-radius: 0 0 0 20px;
 }
-.table tbody tr:last-child td:last-child {
-	border-radius: 0 0 20px 0;
+.table tbody td:last-child {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     padding: 30px;
+}
+.table tbody tr:last-child td:last-child{
+	border-radius: 0 0 20px 0;
+
 }
 
 

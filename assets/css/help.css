@@ -1,0 +1,41 @@
+.profile__main__content__help-block {
+    background: #fff;
+    padding: 21px 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content:space-between ;
+    align-items: flex-end;
+
+}
+.profile__main__content__help-block-left-side {
+    max-width: 56%;
+}
+
+.profile__main__content__help-block-left-side-info {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+}
+.main-text {
+}
+.left {
+}
+.profile__main__content__help-block-left_links {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.phone-link {
+    color: #fff;
+    background: var(--dark-blue);
+    padding: 17px 39px;
+    border-radius: 10px;
+}
+.mail-link {
+    color: var(--dark-blue);
+}
+.help-img{
+    width: 37.9%;
+}
