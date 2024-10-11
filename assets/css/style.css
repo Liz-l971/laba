@@ -2,16 +2,17 @@
     banner
 */
 .banner-background {
-    position: absolute;
+    position:fixed;
     top: 0;
     width: 100%;
     object-fit: cover;
-    z-index: -1;
+    z-index: -4;
     height: 100vh;
+    filter: brightness(0.4);
 }
 
 .banner {
-    background: black;
+    background: rgba(0, 0, 0, 0.75);
     height: 100vh;
 
 
@@ -93,17 +94,23 @@
 
 .block-about_us__content-img {
     border-radius: 2.5rem;
-    object-fit: cover;
-    height: -webkit-fill-available;
+    height: 100%;
     opacity: 0%;
     transform: scale(0.7);
+    background: url(../img/aboutUsImg.jpg);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -217px -24px;
     transition: all 0.8s ease 0.2s;
 
 }
 
 .block-about_us__content-img._active{
     opacity: 100%;
-    transform: scale(1);
+    transform: none;
+    background-attachment: fixed;
+
 }
 .block-about_us__content-info {
     height: 850px;
@@ -669,25 +676,29 @@ opacity: 100%;
     trust
 */
 
+.trust-block{
+    /* opacity: 0%; */
+transform: scaleY(0.0001);
+transition: all 0.8s ease-out 0.2s;
+
+}
+.trust-block._active{
+transform: none;
+/* opacity: 100%; */
+}
+
 .unical-background {
     position: relative;
     padding: 22rem 0;
-    /* opacity: 0%; */
-    transform: scaleY(0.0001);
-    transition: all 0.8s ease-out 0.2s;
-}
-.unical-background._active{
-    transform: scaleY(1);
-    /* opacity: 100%; */
+
 }
 
+
 .backround-vector {
-    position: absolute;
-    top: 0px;
-    left: 0;
-    width: 100%;
-    height: -webkit-fill-available;
-    object-fit: cover;
+background: url(../img/backroundVector.png);
+background-size: cover;
+background-attachment: fixed;
+height: 100%;
 }
 
 .trust-block__content {

@@ -25,7 +25,11 @@
     border-radius: 25px;
     overflow: hidden;
 }
-
+.main-background{
+    background: #fff;
+    position: relative;
+    z-index: -4;
+}
 .lazy{
     background: #c5c5c68d;
 }
@@ -226,6 +230,10 @@ letter-spacing: -0.01em;
 
 .block.block--overflow-none{
     overflow: unset;
+}
+
+.block.padding-none{
+    padding: 0;
 }
 
 /*

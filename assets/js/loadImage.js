@@ -25,5 +25,5 @@ document.addEventListener("DOMContentLoaded", function() {
     
   video.addEventListener('canplaythrough', function() {
       console.log('Видео полностью загружено и готово к воспроизведению без прерываний.');
-      document.querySelector(".banner").style.background="rgba(0, 0, 0, 0.75)"
+      document.querySelector(".banner").style.background="none"
   });
