@@ -26,9 +26,9 @@
     overflow: hidden;
 }
 .main-background{
-    background: #fff;
     position: relative;
-    z-index: -4;
+    background: #fff;
+z-index: 1;  
 }
 .lazy{
     background: #c5c5c68d;

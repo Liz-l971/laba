@@ -6,7 +6,7 @@
     top: 0;
     width: 100%;
     object-fit: cover;
-    z-index: -4;
+    z-index: -3;
     height: 100vh;
     filter: brightness(0.4);
 }
@@ -61,11 +61,9 @@
     justify-content: space-between;
     align-items: center;
     gap: 1%;
-    height: 850px;
+    height: 887px;
     position: relative;
     color: #050F27;
-
-
 }
 
 
@@ -103,7 +101,6 @@
     background-repeat: no-repeat;
     background-position: -217px -24px;
     transition: all 0.8s ease 0.2s;
-
 }
 
 .block-about_us__content-img._active{
@@ -113,7 +110,7 @@
 
 }
 .block-about_us__content-info {
-    height: 850px;
+    height: 887px;
     background: #E8F6FE;
     border-radius: 2.5rem;
     color: #050f27;
@@ -312,7 +309,7 @@ color: #050f27;
 
     transform: translateY(-100%);
     transition: all 0.8s ease 0.8s;
-    z-index: -2;
+    z-index: 0;
 
 }
 
