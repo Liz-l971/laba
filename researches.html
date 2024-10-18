@@ -16,6 +16,7 @@
     <script src="./assets/js/modal.js" defer></script>
     <script src="./assets/js/loadImage.js" defer></script>
     <script src="./assets/js/basketCount.js" defer></script>
+    <script src="./assets/js/scrollAnimation.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <link rel="stylesheet" href="./assets/css/libs/fancy-bax.css">
@@ -328,30 +329,62 @@
         </div>
     </section>
 
-    <section class="block block--padding-top-none">
+
+    <section class="block block--padding-top-none " id="about">
         <div class="container">
-            <div class="researches__sertificat__content">
-                <img src="./assets/img/researches/researches_sertificat_background.jpg" alt="лаборатория имеет национальный сертификат" class="researches__sertificat__content-img">
-                <a href="index.html#about" class="sertificat-arrow-button">
-                    <img src="./assets/img/arrowDark.svg"
-                    srcset="./assets/img/arrowDark-medium.svg 40w,
-                    ./assets/img/arrowDark-small.svg 25w"
-                    sizes="(max-width: 1200px) 40px,
-                    (max-width: 840px) 25px,
-                    (max-width: 375px) 40px,
-                        60px" 
-                     class="arrow-dark-image">
-                </a>
-                <div class="sertificat-title-background">
-                    <div class="title__wrap padding-none">
-                        <p class="title">Лаборатория имеет сертификат национальной лаборатории</p>
-                        <div class="title__wrap-line">
+            <div class="block-about_us__content">
         
+                <!-- <img src="./assets/img/aboutUsImg.jpg" 
+                srcset="./assets/img/aboutUsImgMedium.jpg 300w, 
+                        ./assets/img/aboutUsImgSmall.jpg 245w"
+                sizes="(max-width: 1590px) 300px, 
+                       (max-width: 1300px) 245px, 
+                       383px" 
+                alt="небосркебы"class="block-about_us__content-img _anim-items"> -->
+                <div class="block-about_us__content-img _anim-items"></div>
+                    
+                <div class="block-about_us__content-info _anim-items">
+                    <div class="title__wrap padding-none desktop-title">
+                        <p class="title">Мы – испытательная лаборатория "гео палитра"</p>
+                        <div class="title__wrap-line"></div>
+                    </div>
+                    <div class="title__wrap padding-none mobile-title">
+                        <p class="title">Лаборатория "гео палитра"</p>
+                    </div>
+                    <p class="main-text desktop-title">
+                        Компания создана в 2015 году с целью качественного выполнения полного спектра исследований для инженерных изысканий. 
+                        За время своей деятельности мы расширили область компетенций, прошли аттестацию в национальной системе Росаккредитации 
+                        и набрались опыта в областях природопользования. Лаборатория готова выполнить исследования грунтов, воды, почвы, донных отложений для решения всех ваших задач.
+                    </p>
+                    <p class="main-text mobile-title">Компания создана в 2015 году 
+                        с целью выполнения полного спектра исследований 
+                        для инженерных изысканий. </p>
+                        <p class="main-text mobile-title">За время своей деятельности мы расширили область компетенций и прошли аттестацию в системе Росаккредитации.</p>
+                    <a data-fancybox href="#hidden" class="main-button arrow">
+                        <p class="desktop-title">Аттестат аккредитации</p>
+                        <p class="mobile-title">Аттестат</p>
+                    </a>
+                    <div style="display: none; width: 631px;border-radius: 30px; padding: 72px 25px 30px;" id="hidden">
+                        <div class="sertificat-img-wrap">
+                        <img src="./assets/img/sertificat.jpg" alt="Сертификат аккредитации" class="sertificat-image">
+                
                         </div>
                     </div>
                 </div>
+                <img src="./assets/img/vectorDecor.svg" 
+                srcset="./assets/img/vectorDecor-medium.svg 175w,
+                    ./assets/img/vectorDecor-small.svg 93w,
+                    ./assets/img/vectorDecor-smallPhone.svg 55w,"
+                    
+                sizes="(max-width: 1200px) 175px,
+                (max-width: 640px) 93px,
+                (max-width: 375px) 55px,
+                    277px"
+                class="vector-decor about-vector-decor _anim-items">
+                
             </div>
         </div>
+
     </section>
 
     <section class="block block--padding-top-none">
@@ -445,8 +478,8 @@
         </div>
     </section>
 
-    <div id="clients" class="marquee">
-        <ul class="marquee-content">
+    <div class="block" style="padding: 0;">    <div id="clients" class="marquee _anim-items">
+        <ul class="marquee-content ">
 
                 <li><img src="./assets/img/partners/partner1.svg" alt=""></li>
                 <li><img src="./assets/img/partners/partner2.svg" alt=""></li>
@@ -458,9 +491,9 @@
     
 
         </ul>
-    </div>
+    </div></div>
 
-   <section id="consultation" class="block block--border-radius block--minus-margin ligh-blue block--padding-bottom">
+    <section id="consultation" class="block block--border-radius block--minus-margin ligh-blue block--padding-bottom _anim-items">
         <div class="container">
             <div class="title__wrap center">
                 <p class="title">Остались вопросы?</p>
@@ -486,8 +519,8 @@
         </div>
     </section>
 
-    <section class="block block--border-radius dark unical-background block--minus-margin">
-        <img src="./assets/img/backroundVector.png" alt="фон" class="backround-vector">
+    <section class="block padding-none block--border-radius dark  block--minus-margin trust-block _anim-items">
+        <div class="backround-vector unical-background">
         <div class="container">
             <div class="trust-block__content">
                 <div class="title__wrap center">
@@ -500,6 +533,7 @@
                     Выбирайте Гео Палитра для надежных и точных исследований!
                 </p>
             </div>
+        </div>
         </div>
     </section>
     <section id="cart" class="cart">

@@ -1,3 +1,6 @@
+body{
+    overflow-x: hidden;
+}
 .researches__block-top-content{
     display: flex;
     flex-direction: column;
